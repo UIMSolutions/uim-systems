@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.groups.password;
 @safe:
 import uim.systems;
 
-class DCTLPasswordFormGroup : DAPPFormGroup {
+class DCTLPasswordFormGroup : DAPPEntityFormGroup {
   mixin(APPFormComponentThis!("CTLPasswordFormGroup", true));
 
   override void initialize() {

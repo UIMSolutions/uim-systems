@@ -10,7 +10,7 @@ class DCTLAccountForm : DAPPEntityForm {
     super.initialize;
 
     this
-    .body_(CTLAccountFormBody);
+      .body_(CTLAccountFormBody);
   }
 }
 mixin(APPFormCalls!("CTLAccountForm", true));
