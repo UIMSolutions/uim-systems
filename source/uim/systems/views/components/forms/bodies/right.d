@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.right;
 @safe:
 import uim.systems;
 
-class DCTLRightFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLRightFormBody", true));
+class DCTLRightFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLRightFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -31,8 +31,8 @@ class DCTLRightFormBody : DAPPEntityFormBody {
     return null;
   } */
 }
-mixin(APPFormComponentCalls!("CTLRightFormBody", true));
+mixin(ViewComponentCalls!("CTLRightFormContent", true));
 
 unittest {
-  assert(CTLRightFormBody);
+  assert(CTLRightFormContent);
 }

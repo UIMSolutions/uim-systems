@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.groups.valid;
 import uim.systems;
 
 class DCTLValidDatesFormGroup : DAPPStartEndDateFormGroup {
-  mixin(APPFormComponentThis!("CTLValidDatesFormGroup", true));
+  mixin(ViewComponentThis!("CTLValidDatesFormGroup", true));
 
   override void initialize() {
     super.initialize;
@@ -25,4 +25,4 @@ class DCTLValidDatesFormGroup : DAPPStartEndDateFormGroup {
     return APPDateFormGroup.id("entity_validUntil").name("entity_validUntil").h5Input(options);
   }
 }
-mixin(APPFormComponentCalls!("CTLValidDatesFormGroup", true));
+mixin(ViewComponentCalls!("CTLValidDatesFormGroup", true));

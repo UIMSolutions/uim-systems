@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.group;
 @safe:
 import uim.systems;
 
-class DCTLGroupFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLGroupFormBody", true));
+class DCTLGroupFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLGroupFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -16,7 +16,7 @@ class DCTLGroupFormBody : DAPPEntityFormBody {
   }
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
-    debug writeln("DCTLGroupFormBody:formGroup(field, readonly, options)");
+    debug writeln("DCTLGroupFormContent:formGroup(field, readonly, options)");
     if (auto result = super.formGroup(field, readonly, options)) return result;
 
     if (entity) switch(field) {
@@ -32,8 +32,8 @@ class DCTLGroupFormBody : DAPPEntityFormBody {
     return null;
   } */
 }
-mixin(APPFormComponentCalls!("CTLGroupFormBody", true));
+mixin(ViewComponentCalls!("CTLGroupFormContent", true));
 
 unittest {
-  assert(CTLGroupFormBody);
+  assert(CTLGroupFormContent);
 }

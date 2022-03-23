@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.passwordrule;
 @safe:
 import uim.systems;
 
-class DCTLPasswordRuleFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLPasswordRuleFormBody", true));
+class DCTLPasswordRuleFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLPasswordRuleFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -17,7 +17,7 @@ class DCTLPasswordRuleFormBody : DAPPEntityFormBody {
 
 /* 
   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options) {
-    debug writeln("DCTLSiteFormBody:formGroup(field, readonly, options)");
+    debug writeln("DCTLSiteFormContent:formGroup(field, readonly, options)");
     if (auto result = super.formGroup(field, readonly, options)) return result;
 
     if (entity) switch(field) {
@@ -34,8 +34,8 @@ class DCTLPasswordRuleFormBody : DAPPEntityFormBody {
     return null; 
   } */
 }
-mixin(APPFormComponentCalls!("CTLPasswordRuleFormBody", true));
+mixin(ViewComponentCalls!("CTLPasswordRuleFormContent", true));
 
 unittest {
-  assert(CTLPasswordRuleFormBody);
+  assert(CTLPasswordRuleFormContent);
 }

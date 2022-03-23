@@ -3,15 +3,15 @@ module uim.systems.views.components.forms.password;
 @safe:
 import uim.systems;
 
-class DCTLPasswordForm : DAPPEntityForm {
-  mixin(APPFormThis!("CTLPasswordForm", true));
+class DCTLPasswordForm : DForm {
+  mixin(ViewComponentThis!("CTLPasswordForm", true));
 
   override void initialize() {
     super.initialize;
 
     this
-    .body_(CTLPasswordFormBody);
+    .content(CTLPasswordFormContent);
   }
 }
-mixin(APPFormCalls!("CTLPasswordForm", true));
+mixin(ViewComponentCalls!("CTLPasswordForm", true));
 

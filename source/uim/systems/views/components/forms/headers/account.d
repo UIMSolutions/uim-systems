@@ -3,10 +3,10 @@ module uim.systems.views.components.forms.headers.account;
 @safe:
 import uim.systems;
 
-class DCTLAccountFormHeader : DAPPEntityFormHeader {
-  mixin(APPFormComponentThis!("CTLAccountFormHeader", true));
+class DCTLAccountFormHeader : DFormHeader {
+  mixin(ViewComponentThis!("CTLAccountFormHeader", true));
 }
-mixin(APPFormComponentCalls!("CTLAccountFormHeader", true));
+mixin(ViewComponentCalls!("CTLAccountFormHeader", true));
 
 version(uim_systems) {
   unittest {

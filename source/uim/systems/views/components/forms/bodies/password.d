@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.password;
 @safe:
 import uim.systems;
 
-class DCTLPasswordFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLPasswordFormBody", true));
+class DCTLPasswordFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLPasswordFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -28,8 +28,8 @@ class DCTLPasswordFormBody : DAPPEntityFormBody {
     return null;
   } */
 }
-mixin(APPFormComponentCalls!("CTLPasswordFormBody", true));
+mixin(ViewComponentCalls!("CTLPasswordFormContent", true));
 
 unittest {
-  assert(CTLPasswordFormBody);
+  assert(CTLPasswordFormContent);
 }

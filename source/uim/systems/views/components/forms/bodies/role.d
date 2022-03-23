@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.role;
 @safe:
 import uim.systems;
 
-class DCTLRoleFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLRoleFormBody", true));
+class DCTLRoleFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLRoleFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -16,7 +16,7 @@ class DCTLRoleFormBody : DAPPEntityFormBody {
   }
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
-    debug writeln("DCTLRoleFormBody:formGroup(field, readonly, options)");
+    debug writeln("DCTLRoleFormContent:formGroup(field, readonly, options)");
 
     if (entity) switch(field) {
       /* case "active": return CTLActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
@@ -32,8 +32,8 @@ class DCTLRoleFormBody : DAPPEntityFormBody {
     return null;
   } */
 }
-mixin(APPFormComponentCalls!("CTLRoleFormBody", true));
+mixin(ViewComponentCalls!("CTLRoleFormContent", true));
 
 unittest {
-  assert(CTLRoleFormBody);
+  assert(CTLRoleFormContent);
 }

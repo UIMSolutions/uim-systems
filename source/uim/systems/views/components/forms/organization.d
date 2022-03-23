@@ -3,15 +3,15 @@ module uim.systems.views.components.forms.organization;
 @safe:
 import uim.systems;
 
-class DCTLOrganizationForm : DAPPEntityForm {
-  mixin(APPFormThis!("CTLOrganizationForm", true));
+class DCTLOrganizationForm : DForm {
+  mixin(ViewComponentThis!("CTLOrganizationForm", true));
 
   override void initialize() {
     super.initialize;
 
     this
-    .body_(CTLOrganizationFormBody);
+    .content(CTLOrganizationFormContent);
   }
 }
-mixin(APPFormCalls!("CTLOrganizationForm", true));
+mixin(ViewComponentCalls!("CTLOrganizationForm", true));
 

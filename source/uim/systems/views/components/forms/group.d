@@ -3,15 +3,15 @@ module uim.systems.views.components.forms.group;
 @safe:
 import uim.systems;
 
-class DCTLGroupForm : DAPPEntityForm {
-  mixin(APPFormThis!("CTLGroupForm", true));
+class DCTLGroupForm : DForm {
+  mixin(ViewComponentThis!("CTLGroupForm", true));
 
   override void initialize() {
     this
-    .body_(CTLGroupFormBody);
+    .content(CTLGroupFormContent);
   }
 }
-mixin(APPFormCalls!("CTLGroupForm", true));
+mixin(ViewComponentCalls!("CTLGroupForm", true));
 
 version(uim_systems) {
   unittest {

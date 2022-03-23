@@ -3,17 +3,17 @@ module uim.systems.views.components.forms.role;
 @safe:
 import uim.systems;
 
-class DCTLRoleForm : DAPPEntityForm {
-  mixin(APPFormThis!("CTLRoleForm", true));
+class DCTLRoleForm : DForm {
+  mixin(ViewComponentThis!("CTLRoleForm", true));
 
   override void initialize() {
     super.initialize;
 
     this
-    .body_(CTLRoleFormBody);
+    .content(CTLRoleFormContent);
   }
 }
-mixin(APPFormCalls!("CTLRoleForm", true));
+mixin(ViewComponentCalls!("CTLRoleForm", true));
 
 version(uim_systems) {
   unittest {

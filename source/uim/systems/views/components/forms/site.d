@@ -3,17 +3,17 @@ module uim.systems.views.components.forms.site;
 @safe:
 import uim.systems;
 
-class DCTLSiteForm : DAPPEntityForm {
-  mixin(APPFormThis!("CTLSiteForm", true));
+class DCTLSiteForm : DForm {
+  mixin(ViewComponentThis!("CTLSiteForm", true));
 
   override void initialize() { 
     super.initialize; 
 
     this
-    .body_(CTLSiteFormBody);
+    .content(CTLSiteFormContent);
   }
 }
-mixin(APPFormCalls!("CTLSiteForm", true));
+mixin(ViewComponentCalls!("CTLSiteForm", true));
 
 version(uim_systems) {
   unittest {

@@ -3,12 +3,12 @@ module uim.systems.views.components.forms.headers.right;
 @safe:
 import uim.systems;
 
-class DCTLRightFormHeader : DAPPEntityFormHeader {
+class DCTLRightFormHeader : DFormHeader {
   this() { super(); }
-  this(DAPPForm myForm) { this().form(myForm); }
+  this(DForm myForm) { this().form(myForm); }
 }
 auto CTLRightFormHeader() { return new DCTLRightFormHeader(); }
-auto CTLRightFormHeader(DAPPForm myForm) { return new DCTLRightFormHeader(myForm); }
+auto CTLRightFormHeader(DForm myForm) { return new DCTLRightFormHeader(myForm); }
 
 unittest {
   assert(CTLRightFormHeader);

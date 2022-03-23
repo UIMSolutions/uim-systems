@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.groups.handler;
 @safe:
 import uim.systems;
 
-class DSYSFormGroupHandler : DAPPFormGroupHandler {
-  mixin(APPFormComponentThis!("SYSFormGroupHandler", true));
+class DSYSFormGroupHandler : DFormGroupHandler {
+  mixin(ViewComponentThis!("SYSFormGroupHandler", true));
 
   override void initialize() {
     super.initialize;
@@ -48,4 +48,4 @@ class DSYSFormGroupHandler : DAPPFormGroupHandler {
     return null;
   } */
 }  
-mixin(APPFormComponentCalls!("SYSFormGroupHandler", true));
+mixin(ViewComponentCalls!("SYSFormGroupHandler", true));

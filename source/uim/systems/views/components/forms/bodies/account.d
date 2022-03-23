@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.account;
 @safe:
 import uim.systems;
 
-class DCTLAccountFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLAccountFormBody", true));
+class DCTLAccountFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLAccountFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -16,7 +16,7 @@ class DCTLAccountFormBody : DAPPEntityFormBody {
   }
 
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
-    debug writeln("DCTLAccountFormBody:formGroup(field, readonly, options)");
+    debug writeln("DCTLAccountFormContent:formGroup(field, readonly, options)");
     if (auto result = super.formGroup(field, readonly, options)) return result;
 
     if (entity) switch(field) {
@@ -31,8 +31,8 @@ class DCTLAccountFormBody : DAPPEntityFormBody {
     return null;
   } */
 }
-mixin(APPFormComponentCalls!("CTLAccountFormBody", true));
+mixin(ViewComponentCalls!("CTLAccountFormContent", true));
 
 unittest {
-  assert(CTLAccountFormBody);
+  assert(CTLAccountFormContent);
 }

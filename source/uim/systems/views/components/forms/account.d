@@ -3,15 +3,15 @@ module uim.systems.views.components.forms.account;
 @safe:
 import uim.systems;
 
-class DCTLAccountForm : DAPPEntityForm {
-  mixin(APPFormThis!("CTLAccountForm", true));
+class DCTLAccountForm : DForm {
+  mixin(ViewComponentThis!("CTLAccountForm", true));
 
   override void initialize() {
     super.initialize;
 
     this
-      .body_(CTLAccountFormBody);
+      .content(CTLAccountFormContent);
   }
 }
-mixin(APPFormCalls!("CTLAccountForm", true));
+mixin(ViewComponentCalls!("CTLAccountForm", true));
 

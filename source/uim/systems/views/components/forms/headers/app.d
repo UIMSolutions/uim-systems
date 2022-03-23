@@ -3,12 +3,12 @@ module uim.systems.views.components.forms.headers.app;
 @safe:
 import uim.systems;
 
-class DCTLAppFormHeader : DAPPEntityFormHeader {
+class DCTLAppFormHeader : DFormHeader {
   this() { super(); }
-  this(DAPPForm myForm) { this().form(myForm); }
+  this(DForm myForm) { this().form(myForm); }
 }
 auto CTLAppFormHeader() { return new DCTLAppFormHeader(); }
-auto CTLAppFormHeader(DAPPForm myForm) { return new DCTLAppFormHeader(myForm); }
+auto CTLAppFormHeader(DForm myForm) { return new DCTLAppFormHeader(myForm); }
 
 unittest {
   assert(CTLAppFormHeader);

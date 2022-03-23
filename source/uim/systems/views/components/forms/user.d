@@ -3,17 +3,17 @@ module uim.systems.views.components.forms.user;
 @safe:
 import uim.systems;
 
-class DCTLUserForm : DAPPEntityForm {
-  mixin(APPFormThis!("CTLUserForm", true));
+class DCTLUserForm : DForm {
+  mixin(ViewComponentThis!("CTLUserForm", true));
 
   override void initialize() { 
     super.initialize; 
     
     this
-    .body_(CTLUserFormBody);
+    .content(CTLUserFormContent);
   }
 }
-mixin(APPFormCalls!("CTLUserForm", true));
+mixin(ViewComponentCalls!("CTLUserForm", true));
 
 version(uim_systems) {
   unittest {

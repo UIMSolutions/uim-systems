@@ -3,12 +3,12 @@ module uim.systems.views.components.forms.headers.password;
 @safe:
 import uim.systems;
 
-class DCTLPasswordFormHeader : DAPPEntityFormHeader {
+class DCTLPasswordFormHeader : DFormHeader {
   this() { super(); }
-  this(DAPPForm myForm) { this().form(myForm); }
+  this(DForm myForm) { this().form(myForm); }
 }
 auto CTLPasswordFormHeader() { return new DCTLPasswordFormHeader(); }
-auto CTLPasswordFormHeader(DAPPForm myForm) { return new DCTLPasswordFormHeader(myForm); }
+auto CTLPasswordFormHeader(DForm myForm) { return new DCTLPasswordFormHeader(myForm); }
 
 version(uim_systems) {
   unittest {

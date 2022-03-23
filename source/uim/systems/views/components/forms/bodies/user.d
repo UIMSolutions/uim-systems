@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.user;
 @safe:
 import uim.systems;
 
-class DCTLUserFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLUserFormBody", true));
+class DCTLUserFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLUserFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -28,7 +28,7 @@ class DCTLUserFormBody : DAPPEntityFormBody {
     return null;
   } */
 }
-mixin(APPFormComponentCalls!("CTLUserFormBody", true));
+mixin(ViewComponentCalls!("CTLUserFormContent", true));
 
 unittest {
   assert(CTLUserForm);

@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.site;
 @safe:
 import uim.systems;
 
-class DCTLSiteFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLSiteFormBody", true));
+class DCTLSiteFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLSiteFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -16,7 +16,7 @@ class DCTLSiteFormBody : DAPPEntityFormBody {
   }
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
-    debug writeln("DCTLSiteFormBody:formGroup(field, readonly, options)");
+    debug writeln("DCTLSiteFormContent:formGroup(field, readonly, options)");
 
     if (entity) switch(field) {
       /* case "active": return CTLActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
@@ -32,8 +32,8 @@ class DCTLSiteFormBody : DAPPEntityFormBody {
     return null;
   } */
 }
-mixin(APPFormComponentCalls!("CTLSiteFormBody", true));
+mixin(ViewComponentCalls!("CTLSiteFormContent", true));
 
 unittest {
-  assert(CTLSiteFormBody);
+  assert(CTLSiteFormContent);
 }

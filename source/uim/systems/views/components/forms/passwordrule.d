@@ -3,15 +3,15 @@ module uim.systems.views.components.forms.passwordrule;
 @safe:
 import uim.systems;
 
-class DCTLPasswordRuleForm : DAPPEntityForm {
+class DCTLPasswordRuleForm : DForm {
   this() { super();
     this
-    .body_(CTLPasswordRuleFormBody);
+    .content(CTLPasswordRuleFormContent);
   }
   this(string rootPath, CRUDModes crudMode = CRUDModes.Read) { 
         this().rootPath(rootPath).crudMode(crudMode);
     this
-    .body_(CTLPasswordRuleFormBody);
+    .content(CTLPasswordRuleFormContent);
   }
   this(DAPPView myView) { this().view(myView); }
   this(DOOPEntity myEntity) { this().entity(myEntity); }

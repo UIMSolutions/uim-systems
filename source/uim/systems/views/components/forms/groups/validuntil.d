@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.groups.validuntil;
 import uim.systems;
 
 class DCTLValidUntilFormGroup : DAPPDateFormGroup {
-  mixin(APPFormComponentThis!("CTLValidUntilFormGroup", true));
+  mixin(ViewComponentThis!("CTLValidUntilFormGroup", true));
 
   override void initialize() {
     super.initialize;
@@ -16,4 +16,4 @@ class DCTLValidUntilFormGroup : DAPPDateFormGroup {
       .fieldName("validUntil");
   }
 }
-mixin(APPFormComponentCalls!("CTLValidUntilFormGroup", true));
+mixin(ViewComponentCalls!("CTLValidUntilFormGroup", true));

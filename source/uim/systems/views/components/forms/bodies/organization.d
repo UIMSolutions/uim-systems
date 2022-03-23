@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.organization;
 @safe:
 import uim.systems;
 
-class DCTLOrganizationFormBody : DAPPEntityFormBody {
-  mixin(APPFormComponentThis!("CTLOrganizationFormBody", true));
+class DCTLOrganizationFormContent : DFormContent {
+  mixin(ViewComponentThis!("CTLOrganizationFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -26,8 +26,8 @@ class DCTLOrganizationFormBody : DAPPEntityFormBody {
     }
   } */
 }
-mixin(APPFormComponentCalls!("CTLOrganizationFormBody", true));
+mixin(ViewComponentCalls!("CTLOrganizationFormContent", true));
 
 unittest {
-  assert(CTLOrganizationFormBody);
+  assert(CTLOrganizationFormContent);
 }
