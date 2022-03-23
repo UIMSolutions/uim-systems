@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.organization;
 @safe:
 import uim.systems;
 
-class DCTLOrganizationFormContent : DFormContent {
+class DCTLOrganizationFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLOrganizationFormContent", true));
 
   override void initialize() {

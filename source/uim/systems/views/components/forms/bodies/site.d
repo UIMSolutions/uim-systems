@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.site;
 @safe:
 import uim.systems;
 
-class DCTLSiteFormContent : DFormContent {
+class DCTLSiteFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLSiteFormContent", true));
 
   override void initialize() {

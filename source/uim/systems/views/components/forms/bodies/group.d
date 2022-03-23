@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.group;
 @safe:
 import uim.systems;
 
-class DCTLGroupFormContent : DFormContent {
+class DCTLGroupFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLGroupFormContent", true));
 
   override void initialize() {

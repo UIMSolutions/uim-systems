@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.role;
 @safe:
 import uim.systems;
 
-class DCTLRoleFormContent : DFormContent {
+class DCTLRoleFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLRoleFormContent", true));
 
   override void initialize() {

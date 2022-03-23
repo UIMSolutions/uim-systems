@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.password;
 @safe:
 import uim.systems;
 
-class DCTLPasswordFormContent : DFormContent {
+class DCTLPasswordFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLPasswordFormContent", true));
 
   override void initialize() {

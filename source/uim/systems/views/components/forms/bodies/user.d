@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.user;
 @safe:
 import uim.systems;
 
-class DCTLUserFormContent : DFormContent {
+class DCTLUserFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLUserFormContent", true));
 
   override void initialize() {

@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.right;
 @safe:
 import uim.systems;
 
-class DCTLRightFormContent : DFormContent {
+class DCTLRightFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLRightFormContent", true));
 
   override void initialize() {

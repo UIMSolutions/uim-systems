@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.passwordrule;
 @safe:
 import uim.systems;
 
-class DCTLPasswordRuleFormContent : DFormContent {
+class DCTLPasswordRuleFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLPasswordRuleFormContent", true));
 
   override void initialize() {
@@ -21,7 +21,8 @@ class DCTLPasswordRuleFormContent : DFormContent {
     if (auto result = super.formGroup(field, readonly, options)) return result;
 
     if (entity) switch(field) {
-      /* case "active": return CTLActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
+      /* case "active": return CTLActiveFormGroup(this.form).entity(this.entity).toH5(options);      
+      case "valid":
       case "valid": return CTLValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
       case "validFrom": return CTLValidFromFormGroup(this.form).entity(this.entity).toH5(options);
       case "validUntil": return CTLValidUntilFormGroup(this.form).entity(this.entity).toH5(options);

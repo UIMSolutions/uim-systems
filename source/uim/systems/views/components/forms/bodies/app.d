@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.app;
 @safe:
 import uim.systems;
 
-class DCTLAppFormContent : DFormContent {
+class DCTLAppFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLAppFormContent", true));
 
   override void initialize() {

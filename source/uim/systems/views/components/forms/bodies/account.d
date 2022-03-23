@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.bodies.account;
 @safe:
 import uim.systems;
 
-class DCTLAccountFormContent : DFormContent {
+class DCTLAccountFormContent : DEntityFormContent {
   mixin(ViewComponentThis!("CTLAccountFormContent", true));
 
   override void initialize() {
