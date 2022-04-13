@@ -4,5 +4,6 @@ module uim.systems.controllers;
 import uim.systems;
 
 // Package
+public import uim.systems.controllers.actions;
 public import uim.systems.controllers.components;
 public import uim.systems.controllers.pages;

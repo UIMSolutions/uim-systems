@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLAppPage : DAPPPageController {
   this() { super(); 
     this
-    .collectionName(systems_TENANT)
+    .collectionName(system_TENANT)
     .checks([
       APPCheckAppSessionHasSession, APPCheckAppSessionHasSite, // AppSession related checks
       APPCheckDatabaseHasSessions // Database related checks
@@ -27,7 +27,7 @@ class DCTLAppPage : DAPPPageController {
     }
     options["sessionId"] = sessionId;
 
-    auto dbSession = database[systems_TENANT, "sessions"].findOne(["id":sessionId]);
+    auto dbSession = database[system_TENANT, "sessions"].findOne(["id":sessionId]);
     if (!dbSession) {
       debug writeln("session not found");
       _response.redirect("/login"); return;
@@ -44,7 +44,7 @@ class DCTLAppPage : DAPPPageController {
     }
     options["siteId"] = siteId;
 
-    auto dbSite = database[systems_TENANT, "sites"].findOne(["id":siteId]);
+    auto dbSite = database[system_TENANT, "sites"].findOne(["id":siteId]);
     if (!dbSite) {
       debug writeln("siteId not found");
       _response.redirect("/index");
