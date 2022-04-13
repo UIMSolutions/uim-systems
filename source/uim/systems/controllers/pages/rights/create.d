@@ -1,17 +1,17 @@
-module uim.systems.controllers.pages.accounts.create;
+module uim.systems.controllers.pages.rights.create;
 
 @safe:
 import uim.systems;
 
-class DSystemAccountCreatePageController : DSystemCreatePageController {
-  mixin(APPPageControllerThis!("SystemAccountCreatePageController"));
+class DSystemRightCreatePageController : DSystemCreatePageController {
+  mixin(APPPageControllerThis!("SystemRightCreatePageController"));
 
   override void initialize() {
     super.initialize;
 
     this
-      .collectionName("system_accounts")
-      .rootPath("/system/accounts");
+      .collectionName("system_rights")
+      .rootPath("/system/rights");
 
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);
@@ -21,13 +21,13 @@ class DSystemAccountCreatePageController : DSystemCreatePageController {
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .link(["href":this.rootPath], "Accounts")
+        .link(["href":this.rootPath], "Rechte")
         .item(["active", "fw-bold"], "Erstellen")
       );
 
       myHeader
         .rootPath(this.rootPath)
-        .title(titleCreate("Account erstellen"))
+        .title(titleCreate("Recht erstellen"))
         .breadcrumbs(bc);
     }
 
@@ -41,7 +41,7 @@ class DSystemAccountCreatePageController : DSystemCreatePageController {
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader
             .rootPath(this.rootPath)
-            .mainTitle("Neuer Account")
+            .mainTitle("Neues Recht")
             .subTitle("Bitte Werte eingeben")
             .actions([["cancel", "save"]]);
       }
@@ -63,13 +63,13 @@ class DSystemAccountCreatePageController : DSystemCreatePageController {
       .view(myView);      
   }
 }
-mixin(APPPageControllerCalls!("SystemAccountCreatePageController"));
+mixin(APPPageControllerCalls!("SystemRightCreatePageController"));
 
 version(test_uim_systems) {
   unittest {
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(new SystemAccountCreatePageController); 
+		testPageController(new SystemRightCreatePageController); 
 
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(SystemAccountCreatePageController); 
+		testPageController(SystemRightCreatePageController); 
 }}

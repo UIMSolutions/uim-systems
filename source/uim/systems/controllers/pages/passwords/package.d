@@ -1,4 +1,4 @@
-module source.uim.systems.controllers.pages.passwords copy;
+module uim.systems.controllers.pages.passwords;
 
 @safe:
 import uim.systems;

@@ -1,10 +1,10 @@
-module uim.systems.controllers.pages.passwords.index;
+module uim.systems.controllers.pages.logins.index;
 
 @safe:
 import uim.systems;
 
-class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemPasswordIndexPageController"));
+class DSystemLoginIndexPageController : DSystemEntitiesPageController {
+  mixin(APPPageControllerThis!("SystemLoginIndexPageController"));
 
   override void initialize() {
     super.initialize;
@@ -13,44 +13,44 @@ class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
  
     this
       .view(myView)
-      .rootPath("/system/passwords")
-      .collectionName("system_passwords");
+      .rootPath("/system/logins")
+      .collectionName("system_logins");
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .item(["active", "fw-bold"], "Passwords")
+        .item(["active", "fw-bold"], "Logins")
       );
 
       myHeader
-        .rootPath("/system/passwords")
+        .rootPath("/system/logins")
         .breadcrumbs(bc)
-        .title(titleView("Übersicht Passwords"))
+        .title(titleView("Übersicht Logins"))
         .actions([["refresh", "list", "create"]]);
     }
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/passwords")
+       .rootPath("/system/logins")
        .content(
           EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
-            .mainTitle("Passwords")
-            .subTitle("Passwords anzeigen")
+            .mainTitle("Logins")
+            .subTitle("Logins anzeigen")
             .actions([["print", "export"]]));
     } 
   }
 }
-mixin(APPPageControllerCalls!("SystemPasswordIndexPageController"));
+mixin(APPPageControllerCalls!("SystemLoginIndexPageController"));
 
 version(test_uim_systems) {
   unittest {
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(new DSystemPasswordIndexPageController); 
+		testPageController(new DSystemLoginIndexPageController); 
 
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(SystemPasswordIndexPageController); 
+		testPageController(SystemLoginIndexPageController); 
 }}

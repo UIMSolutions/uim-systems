@@ -3,7 +3,7 @@ module uim.systems.controllers.pages.passwords.create;
 @safe:
 import uim.systems;
 
-class DSystemPasswordCreatePageController : DMDLCreatePageController {
+class DSystemPasswordCreatePageController : DSystemCreatePageController {
   mixin(APPPageControllerThis!("SystemPasswordCreatePageController"));
 
   override void initialize() {
@@ -16,7 +16,7 @@ class DSystemPasswordCreatePageController : DMDLCreatePageController {
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);
     
-    if (auto pgHeader = cast(DPageHeader)myView.header) {
+    if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -25,7 +25,7 @@ class DSystemPasswordCreatePageController : DMDLCreatePageController {
         .item(["active", "fw-bold"], "Erstellen")
       );
 
-      pgHeader
+      myHeader
         .rootPath(this.rootPath)
         .title(titleCreate("Passwort erstellen"))
         .breadcrumbs(bc);
@@ -36,7 +36,7 @@ class DSystemPasswordCreatePageController : DMDLCreatePageController {
         .rootPath(this.rootPath)
         .method("post")
         .action(this.rootPath~"/actions/create")
-        .content(MDLApiFormContent(myForm));
+        .content(SystemApiFormContent(myForm));
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

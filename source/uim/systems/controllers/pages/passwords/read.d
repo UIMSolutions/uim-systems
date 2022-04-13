@@ -1,9 +1,9 @@
-module source.uim.systems.controllers.pages.passwords copy.read;
+module uim.systems.controllers.pages.passwords.read;
 
 @safe:
 import uim.systems;
 
-class DSystemPasswordReadPageController : DMDLReadPageController {
+class DSystemPasswordReadPageController : DSystemReadPageController {
   mixin(APPPageControllerThis!("SystemPasswordReadPageController"));
 
   override void initialize() {
@@ -16,7 +16,7 @@ class DSystemPasswordReadPageController : DMDLReadPageController {
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
 
-    if (auto pgHeader = cast(DPageHeader)myView.header) {
+    if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -25,7 +25,7 @@ class DSystemPasswordReadPageController : DMDLReadPageController {
         .item(["active", "fw-bold"], "Anzeigen")
       );
 
-      pgHeader
+      myHeader
         .breadcrumbs(bc)
         .title(titleCreate("Password anzeigen"));
     }
@@ -34,7 +34,7 @@ class DSystemPasswordReadPageController : DMDLReadPageController {
       myForm
          .method("post").action(this.rootPath~"/actions/read")
         .content(
-          MDLApiFormContent(myForm)); 
+          SystemApiFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

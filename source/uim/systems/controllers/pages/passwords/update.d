@@ -1,9 +1,9 @@
-module source.uim.systems.controllers.pages.passwords copy.update;
+module uim.systems.controllers.pages.passwords.update;
 
 @safe:
 import uim.systems;
 
-class DSystemPasswordUpdatePageController : DMDLUpdatePageController {
+class DSystemPasswordUpdatePageController : DSystemUpdatePageController {
   mixin(APPPageControllerThis!("SystemPasswordUpdatePageController"));
 
   override void initialize() {
@@ -16,7 +16,7 @@ class DSystemPasswordUpdatePageController : DMDLUpdatePageController {
     auto myView = APPEntityUpdateView(this)
       .rootPath(this.rootPath);
 
-    if (auto pgHeader = cast(DPageHeader)myView.header) {
+    if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -25,7 +25,7 @@ class DSystemPasswordUpdatePageController : DMDLUpdatePageController {
         .item(["active", "fw-bold"], "Anzeigen")
       );
 
-      pgHeader
+      myHeader
         .breadcrumbs(bc)
         .title(titleCreate("Password anzeigen"));
     }
@@ -34,7 +34,7 @@ class DSystemPasswordUpdatePageController : DMDLUpdatePageController {
       myForm
          .method("post").action(this.rootPath~"/actions/update")
         .content(
-          MDLApiFormContent(myForm)); 
+          SystemApiFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

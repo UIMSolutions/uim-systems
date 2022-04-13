@@ -1,17 +1,17 @@
-module uim.systems.controllers.pages.accounts.delete_;
+module uim.systems.controllers.pages.rights.delete_;
 
 @safe:
 import uim.systems;
 
-class DSystemAccountDeletePageController : DSystemDeletePageController {
-  mixin(APPPageControllerThis!("SystemAccountDeletePageController"));
+class DSystemRightDeletePageController : DSystemDeletePageController {
+  mixin(APPPageControllerThis!("SystemRightDeletePageController"));
 
   override void initialize() {
     super.initialize;
 
     this
-      .collectionName("system_accounts")
-      .rootPath("/system/accounts");
+      .collectionName("system_rights")
+      .rootPath("/system/rights");
 
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
@@ -21,13 +21,13 @@ class DSystemAccountDeletePageController : DSystemDeletePageController {
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "systems")
-        .link(["href":this.rootPath], "Accounts")
+        .link(["href":this.rootPath], "Rechte")
         .item(["active", "fw-bold"], "Löschen")
       );
 
       myHeader
         .breadcrumbs(bc)
-        .title(titleDelete("Account löschen"));
+        .title(titleDelete("Recht löschen"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
@@ -38,8 +38,8 @@ class DSystemAccountDeletePageController : DSystemDeletePageController {
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
-          .mainTitle("Accounts")
-          .subTitle("Account löschen");
+          .mainTitle("Rechte")
+          .subTitle("Recht löschen");
       }
 
       this
@@ -56,13 +56,13 @@ class DSystemAccountDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemAccountDeletePageController"));
+mixin(APPPageControllerCalls!("SystemRightDeletePageController"));
 
 version(test_uim_systems) {
   unittest {
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(new DSystemAccountDeletePageController); 
+		testPageController(new DSystemRightDeletePageController); 
 
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(SystemAccountDeletePageController); 
+		testPageController(SystemRightDeletePageController); 
 }}

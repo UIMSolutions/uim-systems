@@ -1,17 +1,17 @@
-module uim.systems.controllers.pages.accounts.update;
+module uim.systems.controllers.pages.rights.update;
 
 @safe:
 import uim.systems;
 
-class DSystemAccountUpdatePageController : DSystemUpdatePageController {
-  mixin(APPPageControllerThis!("SystemAccountUpdatePageController"));
+class DSystemRightUpdatePageController : DSystemUpdatePageController {
+  mixin(APPPageControllerThis!("SystemRightUpdatePageController"));
 
   override void initialize() {
     super.initialize;
 
     this
-      .collectionName("system_accounts")
-      .rootPath("/system/accounts");
+      .collectionName("system_rights")
+      .rootPath("/system/rights");
 
     auto myView = APPEntityUpdateView(this)
       .rootPath(this.rootPath);
@@ -21,13 +21,13 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .link(["href":this.rootPath], "Accounts")
+        .link(["href":this.rootPath], "Rechte")
         .item(["active", "fw-bold"], "Anzeigen")
       );
 
       myHeader
         .breadcrumbs(bc)
-        .title(titleCreate("Account anzeigen"));
+        .title(titleCreate("Recht anzeigen"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
@@ -38,8 +38,8 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
-          .mainTitle("Accounts")
-          .subTitle("Account anzeigen");
+          .mainTitle("Rechte")
+          .subTitle("Recht anzeigen");
       }
 
       this
@@ -59,13 +59,13 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemAccountUpdatePageController"));
+mixin(APPPageControllerCalls!("SystemRightUpdatePageController"));
 
 version(test_uim_systems) {
   unittest {
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(new DSystemAccountUpdatePageController); 
+		testPageController(new DSystemRightUpdatePageController); 
 
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(SystemAccountUpdatePageController); 
+		testPageController(SystemRightUpdatePageController); 
 }}

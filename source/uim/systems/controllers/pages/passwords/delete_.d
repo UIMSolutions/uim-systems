@@ -1,9 +1,9 @@
-module source.uim.systems.controllers.pages.passwords.delete_;
+module uim.systems.controllers.pages.passwords.delete_;
 
 @safe:
 import uim.systems;
 
-class DSystemPasswordDeletePageController : DMDLDeletePageController {
+class DSystemPasswordDeletePageController : DSystemDeletePageController {
   mixin(APPPageControllerThis!("SystemPasswordDeletePageController"));
 
   override void initialize() {
@@ -16,7 +16,7 @@ class DSystemPasswordDeletePageController : DMDLDeletePageController {
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
 
-    if (auto pgHeader = cast(DPageHeader)myView.header) {
+    if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -25,7 +25,7 @@ class DSystemPasswordDeletePageController : DMDLDeletePageController {
         .item(["active", "fw-bold"], "Löschen")
       );
 
-      pgHeader
+      myHeader
         .breadcrumbs(bc)
         .title(titleDelete("Passwort löschen"));
     }
@@ -34,7 +34,7 @@ class DSystemPasswordDeletePageController : DMDLDeletePageController {
       myForm
         .method("post").action(this.rootPath~"/actions/delete")
         .content(
-          MDLApiFormContent(myForm)); 
+          SystemApiFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

@@ -3,7 +3,7 @@ module uim.systems.controllers.pages.accounts.read;
 @safe:
 import uim.systems;
 
-class DSystemAccountReadPageController : DMDLReadPageController {
+class DSystemAccountReadPageController : DSystemReadPageController {
   mixin(APPPageControllerThis!("SystemAccountReadPageController"));
 
   override void initialize() {
@@ -16,7 +16,7 @@ class DSystemAccountReadPageController : DMDLReadPageController {
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
 
-    if (auto pgHeader = cast(DPageHeader)myView.header) {
+    if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -25,7 +25,7 @@ class DSystemAccountReadPageController : DMDLReadPageController {
         .item(["active", "fw-bold"], "Anzeigen")
       );
 
-      pgHeader
+      myHeader
         .breadcrumbs(bc)
         .title(titleCreate("Account anzeigen"));
     }
@@ -34,7 +34,7 @@ class DSystemAccountReadPageController : DMDLReadPageController {
       myForm
          .method("post").action(this.rootPath~"/actions/read")
         .content(
-          MDLApiFormContent(myForm)); 
+          SystemApiFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

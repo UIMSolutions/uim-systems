@@ -1,45 +1,45 @@
-module uim.systems.controllers.pages.accounts.delete_;
+module uim.systems.controllers.pages.logins.read;
 
 @safe:
 import uim.systems;
 
-class DSystemAccountDeletePageController : DSystemDeletePageController {
-  mixin(APPPageControllerThis!("SystemAccountDeletePageController"));
+class DSystemLoginReadPageController : DSystemReadPageController {
+  mixin(APPPageControllerThis!("SystemLoginReadPageController"));
 
   override void initialize() {
     super.initialize;
 
     this
-      .collectionName("system_accounts")
-      .rootPath("/system/accounts");
+      .collectionName("system_logins")
+      .rootPath("/system/logins");
 
-    auto myView = APPEntityDeleteView(this)
+    auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
-        .link(["href":"/system"], "systems")
-        .link(["href":this.rootPath], "Accounts")
-        .item(["active", "fw-bold"], "Löschen")
+        .link(["href":"/system"], "System")
+        .link(["href":this.rootPath], "Logins")
+        .item(["active", "fw-bold"], "Anzeigen")
       );
 
       myHeader
         .breadcrumbs(bc)
-        .title(titleDelete("Account löschen"));
+        .title(titleCreate("Login anzeigen"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-        .method("post").action(this.rootPath~"/actions/delete")
+         .method("post").action(this.rootPath~"/actions/read")
         .content(
           SystemApiFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
-          .mainTitle("Accounts")
-          .subTitle("Account löschen");
+          .mainTitle("Logins")
+          .subTitle("Login anzeigen");      
       }
 
       this
@@ -56,13 +56,13 @@ class DSystemAccountDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemAccountDeletePageController"));
+mixin(APPPageControllerCalls!("SystemLoginReadPageController"));
 
 version(test_uim_systems) {
   unittest {
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(new DSystemAccountDeletePageController); 
+		testPageController(new DSystemLoginReadPageController); 
 
     writeln("--- Tests in ", __MODULE__, "/", __LINE__);
-		testPageController(SystemAccountDeletePageController); 
+		testPageController(SystemLoginReadPageController); 
 }}
