@@ -61,7 +61,7 @@ version(test_uim_modeller) {
     this.scripts.addContents(editorSummary~editorText);
   }
   unittest {
-    version(test_uim_System) {
+    version(test_uim_mdl) {
       /// TODO
     }}
 
@@ -89,7 +89,7 @@ version(test_uim_modeller) {
         });`);
   }
   unittest {
-    version(test_uim_System) {
+    version(test_uim_mdl) {
       /// TODO
     }}
 

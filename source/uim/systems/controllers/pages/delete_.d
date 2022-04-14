@@ -1,4 +1,4 @@
-module source.uim.systems.controllers.pages.delete_;
+module uim.systems.controllers.pages.delete_;
 
 @safe:
 import uim.systems;
@@ -34,7 +34,7 @@ version(test_uim_modeller) {
 		testPageController(SystemDeletePageController); 
 }}
 
-auto SystemDeletePageController(string classesName, string rootController, string addInitialize = "", string addBeforeResponse = "") {
+auto mdlDeletePageController(string classesName, string rootController, string addInitialize = "", string addBeforeResponse = "") {
   return `
     class D`~classesName~`DeletePageController : D`~rootController~`PageController {
       `~appPageControllerThis(classesName~`DeletePageController`, true)~`
@@ -53,7 +53,7 @@ auto SystemDeletePageController(string classesName, string rootController, strin
 }
 
 template SystemDeletePageController(string classesName, string rootController, string addInitialize = "", string addBeforeResponse = "") {
-  const char[] SystemDeletePageController = SystemDeletePageController(classesName, rootController, addInitialize, addBeforeResponse);
+  const char[] SystemDeletePageController = mdlDeletePageController(classesName, rootController, addInitialize, addBeforeResponse);
 }
 
 
@@ -78,6 +78,6 @@ template SystemDeletePageController(string classesName, string rootController, s
     this.scripts.addContents(editorSummary~editorText);
   }
   unittest {
-    version(test_uim_System) {
+    version(test_uim_mdl) {
       /// TODO
     }}*/

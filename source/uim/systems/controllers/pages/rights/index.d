@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.rechte.index;
+module uim.systems.controllers.pages.rights.index;
 
 @safe:
 import uim.systems;
@@ -13,8 +13,8 @@ class DSystemRightIndexPageController : DSystemEntitiesPageController {
  
     this
       .view(myView)
-      .rootPath("/system/right")
-      .collectionName("system_rechte");
+      .rootPath("/system/rights")
+      .collectionName("system_rights");
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
@@ -25,7 +25,7 @@ class DSystemRightIndexPageController : DSystemEntitiesPageController {
       );
 
       myHeader
-        .rootPath("/system/rechte")
+        .rootPath("/system/rights")
         .breadcrumbs(bc)
         .title(titleView("Übersicht Rechte"))
         .actions([["refresh", "list", "create"]]);
@@ -33,7 +33,7 @@ class DSystemRightIndexPageController : DSystemEntitiesPageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-       .rootPath("/system/rechte")
+       .rootPath("/system/rights")
        .content(
           EntitiesFormContent(frm))
         .header(

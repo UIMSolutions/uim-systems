@@ -17,22 +17,21 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
       .rootPath(this.rootPath);
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
-      auto bc = BS5Breadcrumb(
-        BS5BreadcrumbList
-        .link(["href":"/"], "UIM")
-        .link(["href":"/system"], "System")
-        .link(["href":this.rootPath], "Accounts")
-        .item(["active", "fw-bold"], "Anzeigen")
-      );
-
       myHeader
-        .breadcrumbs(bc)
+        .breadcrumbs(
+          BS5Breadcrumb(
+            BS5BreadcrumbList
+            .link(["href":"/"], "UIM")
+            .link(["href":"/system"], "System")
+            .link(["href":this.rootPath], "Accounts")
+            .item(["active", "fw-bold"], "Anzeigen")
+        ))
         .title(titleCreate("Account anzeigen"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-         .method("post").action(this.rootPath~"/actions/update")
+        .method("post").action(this.rootPath~"/actions/update")
         .content(
           SystemApiFormContent(myForm)); 
     

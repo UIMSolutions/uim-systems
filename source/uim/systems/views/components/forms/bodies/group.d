@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.group;
 @safe:
 import uim.systems;
 
-class DCTLGroupFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("CTLGroupFormContent", true));
+class DSystemGroupFormContent : DEntityFormContent {
+  mixin(ViewComponentThis!("SystemGroupFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -16,15 +16,15 @@ class DCTLGroupFormContent : DEntityFormContent {
   }
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
-    debug writeln("DCTLGroupFormContent:formGroup(field, readonly, options)");
+    debug writeln("DSystemGroupFormContent:formGroup(field, readonly, options)");
     if (auto result = super.formGroup(field, readonly, options)) return result;
 
     if (entity) switch(field) {
-/*       case "active": return CTLActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
-      case "valid": return CTLValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
-      case "validFrom": return CTLValidFromFormGroup(this.form).entity(this.entity).toH5(options);
-      case "validUntil": return CTLValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
-      case "otp": return CTLOtpFormGroup(this.form).entity(this.entity).toH5(options);
+/*       case "active": return SystemActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
+      case "valid": return SystemValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validFrom": return SystemValidFromFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validUntil": return SystemValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
+      case "otp": return SystemOtpFormGroup(this.form).entity(this.entity).toH5(options);
 
     
  * /      default: return super.formGroup(field, readonly, options); 
@@ -32,8 +32,8 @@ class DCTLGroupFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("CTLGroupFormContent", true));
+mixin(ViewComponentCalls!("SystemGroupFormContent", true));
 
 unittest {
-  assert(CTLGroupFormContent);
+  assert(SystemGroupFormContent);
 }

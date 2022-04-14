@@ -17,16 +17,15 @@ class DSystemAccountDeletePageController : DSystemDeletePageController {
       .rootPath(this.rootPath);
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
-      auto bc = BS5Breadcrumb(
-        BS5BreadcrumbList
-        .link(["href":"/"], "UIM")
-        .link(["href":"/system"], "systems")
-        .link(["href":this.rootPath], "Accounts")
-        .item(["active", "fw-bold"], "Löschen")
-      );
-
       myHeader
-        .breadcrumbs(bc)
+        .breadcrumbs(
+          BS5Breadcrumb(
+            BS5BreadcrumbList
+              .link(["href":"/"], "UIM")
+              .link(["href":"/system"], "system")
+              .link(["href":this.rootPath], "Accounts")
+              .item(["active", "fw-bold"], "Löschen")
+        ))
         .title(titleDelete("Account löschen"));
     }
 

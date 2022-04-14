@@ -38,7 +38,7 @@ version(test_uim_modeller) {
 		testPageController(SystemUpdatePageController); 
 }}
 
-auto SystemUpdatePageController(string classesName, string rootController, string addInitialize = "", string addBeforeResponse = "") {
+auto mdlUpdatePageController(string classesName, string rootController, string addInitialize = "", string addBeforeResponse = "") {
   return `
     class D`~classesName~`UpdatePageController : D`~rootController~`PageController {
       `~appPageControllerThis(classesName~`UpdatePageController`, true)~`
@@ -57,7 +57,7 @@ auto SystemUpdatePageController(string classesName, string rootController, strin
 }
 
 template SystemUpdatePageController(string classesName, string rootController, string addInitialize = "", string addBeforeResponse = "") {
-  const char[] SystemUpdatePageController = SystemUpdatePageController(classesName, rootController, addInitialize, addBeforeResponse);
+  const char[] SystemUpdatePageController = mdlUpdatePageController(classesName, rootController, addInitialize, addBeforeResponse);
 }
 
 /*
@@ -83,7 +83,7 @@ template SystemUpdatePageController(string classesName, string rootController, s
     this.scripts.addContents(editorSummary~editorText);
   }
   unittest {
-    version(test_uim_System) {
+    version(test_uim_mdl) {
       /// TODO
     }}
 
@@ -113,7 +113,7 @@ template SystemUpdatePageController(string classesName, string rootController, s
  
   }
   unittest {
-    version(test_uim_System) {
+    version(test_uim_mdl) {
       /// TODO
     }}
 }

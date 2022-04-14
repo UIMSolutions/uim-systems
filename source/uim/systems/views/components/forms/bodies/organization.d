@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.organization;
 @safe:
 import uim.systems;
 
-class DCTLOrganizationFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("CTLOrganizationFormContent", true));
+class DSystemOrganizationFormContent : DEntityFormContent {
+  mixin(ViewComponentThis!("SystemOrganizationFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -17,17 +17,17 @@ class DCTLOrganizationFormContent : DEntityFormContent {
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
     switch(field) {
-      case "active": return CTLActiveFormGroup(this.form).entity(this.entity).toH5(options);      
-      case "valid": return CTLValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
-      case "validFrom": return CTLValidFromFormGroup(this.form).entity(this.entity).toH5(options);
-      case "validUntil": return CTLValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
-      case "otp": return CTLOtpFormGroup(this.form).entity(this.entity).toH5(options);
+      case "active": return SystemActiveFormGroup(this.form).entity(this.entity).toH5(options);      
+      case "valid": return SystemValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validFrom": return SystemValidFromFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validUntil": return SystemValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
+      case "otp": return SystemOtpFormGroup(this.form).entity(this.entity).toH5(options);
       default: return super.formGroup(field, readonly, options); 
     }
   } */
 }
-mixin(ViewComponentCalls!("CTLOrganizationFormContent", true));
+mixin(ViewComponentCalls!("SystemOrganizationFormContent", true));
 
 unittest {
-  assert(CTLOrganizationFormContent);
+  assert(SystemOrganizationFormContent);
 }

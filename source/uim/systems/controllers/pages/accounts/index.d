@@ -17,16 +17,15 @@ class DSystemAccountIndexPageController : DSystemEntitiesPageController {
       .collectionName("system_accounts");
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
-      auto bc = BS5Breadcrumb(
-        BS5BreadcrumbList
-        .link(["href":"/"], "UIM")
-        .link(["href":"/system"], "System")
-        .item(["active", "fw-bold"], "Accounts")
-      );
-
       myHeader
         .rootPath("/system/accounts")
-        .breadcrumbs(bc)
+        .breadcrumbs(
+          BS5Breadcrumb(
+            BS5BreadcrumbList
+              .link(["href":"/"], "UIM")
+              .link(["href":"/system"], "System")
+              .item(["active", "fw-bold"], "Accounts")
+        ))
         .title(titleView("Übersicht Accounts"))
         .actions([["refresh", "list", "create"]]);
     }

@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.bodies.site;
 @safe:
 import uim.systems;
 
-class DCTLSiteFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("CTLSiteFormContent", true));
+class DSystemSiteFormContent : DEntityFormContent {
+  mixin(ViewComponentThis!("SystemSiteFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -16,24 +16,24 @@ class DCTLSiteFormContent : DEntityFormContent {
   }
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
-    debug writeln("DCTLSiteFormContent:formGroup(field, readonly, options)");
+    debug writeln("DSystemSiteFormContent:formGroup(field, readonly, options)");
 
     if (entity) switch(field) {
-      /* case "active": return CTLActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
-      case "valid": return CTLValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
-      case "validFrom": return CTLValidFromFormGroup(this.form).entity(this.entity).toH5(options);
-      case "validUntil": return CTLValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
-      case "otp": return CTLOtpFormGroup(this.form).entity(this.entity).toH5(options);
+      /* case "active": return SystemActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
+      case "valid": return SystemValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validFrom": return SystemValidFromFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validUntil": return SystemValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
+      case "otp": return SystemOtpFormGroup(this.form).entity(this.entity).toH5(options);
 
-      case "password": return CTLPasswordFormGroup(this.form).entity(this.entity).toH5(options);
+      case "password": return SystemPasswordFormGroup(this.form).entity(this.entity).toH5(options);
           * /
       default: return super.formGroup(field, readonly, options); 
     }
     return null;
   } */
 }
-mixin(ViewComponentCalls!("CTLSiteFormContent", true));
+mixin(ViewComponentCalls!("SystemSiteFormContent", true));
 
 unittest {
-  assert(CTLSiteFormContent);
+  assert(SystemSiteFormContent);
 }

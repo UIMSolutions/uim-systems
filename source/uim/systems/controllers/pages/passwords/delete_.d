@@ -20,7 +20,7 @@ class DSystemPasswordDeletePageController : DSystemDeletePageController {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
-        .link(["href":"/system"], "systems")
+        .link(["href":"/system"], "system")
         .link(["href":this.rootPath], "Passwörter")
         .item(["active", "fw-bold"], "Löschen")
       );

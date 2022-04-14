@@ -17,18 +17,17 @@ class DSystemAccountCreatePageController : DSystemCreatePageController {
       .rootPath(this.rootPath);
     
     if (auto myHeader = cast(DPageHeader)myView.header) {
-      auto bc = BS5Breadcrumb(
-        BS5BreadcrumbList
-        .link(["href":"/"], "UIM")
-        .link(["href":"/system"], "System")
-        .link(["href":this.rootPath], "Accounts")
-        .item(["active", "fw-bold"], "Erstellen")
-      );
-
       myHeader
         .rootPath(this.rootPath)
         .title(titleCreate("Account erstellen"))
-        .breadcrumbs(bc);
+        .breadcrumbs(
+          BS5Breadcrumb(
+            BS5BreadcrumbList
+              .link(["href":"/"], "UIM")
+              .link(["href":"/system"], "System")
+              .link(["href":this.rootPath], "Accounts")
+              .item(["active", "fw-bold"], "Erstellen")
+          ));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
