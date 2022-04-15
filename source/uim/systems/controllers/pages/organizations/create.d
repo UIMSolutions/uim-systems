@@ -35,7 +35,8 @@ class DSystemOrganizationCreatePageController : DSystemCreatePageController {
         .rootPath(this.rootPath)
         .method("post")
         .action(this.rootPath~"/actions/create")
-        .content(SystemApiFormContent(myForm));
+        .content(
+          SystemOrganizationFormContent(myForm));
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

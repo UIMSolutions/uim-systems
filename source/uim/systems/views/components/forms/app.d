@@ -9,7 +9,7 @@ class DCTLAppForm : DForm {
   override void initialize() {
     super.initialize;
 
-    this.content(CTLAppFormContent);
+    this.content(SystemAppFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLAppForm", true));

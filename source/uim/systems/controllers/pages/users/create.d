@@ -36,7 +36,7 @@ class DSystemUserCreatePageController : DSystemCreatePageController {
         .method("post")
         .action(this.rootPath~"/actions/create")
         .content(
-          SystemApiFormContent(
+          SystemUserFormContent(
             myForm
         ));
     

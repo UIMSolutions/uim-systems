@@ -10,7 +10,7 @@ class DCTLRoleForm : DForm {
     super.initialize;
 
     this
-    .content(CTLRoleFormContent);
+    .content(SystemRoleFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLRoleForm", true));

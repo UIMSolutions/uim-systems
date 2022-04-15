@@ -34,7 +34,7 @@ class DSystemOrganizationReadPageController : DSystemReadPageController {
       myForm
          .method("post").action(this.rootPath~"/actions/read")
         .content(
-          SystemApiFormContent(myForm)); 
+          SystemOrganizationFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

@@ -34,7 +34,7 @@ class DSystemLoginReadPageController : DSystemReadPageController {
       myForm
          .method("post").action(this.rootPath~"/actions/read")
         .content(
-          SystemApiFormContent(myForm)); 
+          SystemLoginFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

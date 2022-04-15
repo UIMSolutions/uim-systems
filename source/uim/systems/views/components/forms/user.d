@@ -10,7 +10,7 @@ class DCTLUserForm : DForm {
     super.initialize; 
     
     this
-    .content(CTLUserFormContent);
+    .content(SystemUserFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLUserForm", true));

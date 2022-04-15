@@ -7,7 +7,7 @@ class DSystemDeletePageController : DSystemEntityPageController {
   mixin(APPPageControllerThis!("SystemDeletePageController"));
 
   override void beforeResponse(STRINGAA options = null) {
-    debugMethodCall(moduleName!DSystemDeletePageController~":DSystemDeletePageController::beforeResponse");
+    debugMethodCall(moduleName!DSystemDeletePageController~":DSystemDeletePageController("~this.name~")::beforeResponse");
     super.beforeResponse(options);
     if (hasError || "redirect" in options) { return; }
 

@@ -32,9 +32,10 @@ class DSystemLoginDeletePageController : DSystemDeletePageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-        .method("post").action(this.rootPath~"/actions/delete")
+        .action(this.rootPath~"/actions/delete")
+        .method("post")
         .content(
-          SystemApiFormContent(myForm)); 
+          SystemLoginFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
@@ -45,8 +46,7 @@ class DSystemLoginDeletePageController : DSystemDeletePageController {
       this
         .scripts
           .addContents(
-            editorSummary~
-            editorText~
+            editorSummary~editorText~
             "editorSummary.disabled();"~
             "editorText.disabled();"
           );

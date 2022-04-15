@@ -3,14 +3,12 @@ module uim.systems.views.components.forms.headers.role;
 @safe:
 import uim.systems;
 
-class DCTLRoleFormHeader : DFormHeader {
-  this() { super(); }
-  this(DForm myForm) { this().form(myForm); }
+class DSystemRoleFormHeader : DFormHeader {
+  mixin(FormComponentThis!("SystemRightFormHeader", true));
 }
-auto CTLRoleFormHeader() { return new DCTLRoleFormHeader(); }
-auto CTLRoleFormHeader(DForm myForm) { return new DCTLRoleFormHeader(myForm); }
+mixin(FormComponentCalls!("SystemRightFormHeader", true));
 
 version(uim_systems) {
   unittest {
-    assert(CTLRoleFormHeader);
+    assert(SystemRoleFormHeader);
 }}

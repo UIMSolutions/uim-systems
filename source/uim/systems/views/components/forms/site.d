@@ -10,7 +10,7 @@ class DCTLSiteForm : DForm {
     super.initialize; 
 
     this
-    .content(CTLSiteFormContent);
+    .content(SystemSiteFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLSiteForm", true));

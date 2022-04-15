@@ -3,13 +3,11 @@ module uim.systems.views.components.forms.headers.organization;
 @safe:
 import uim.systems;
 
-class DCTLOrganizationFormHeader : DFormHeader {
-  this() { super(); }
-  this(DForm myForm) { this().form(myForm); }
+class DSystemOrganizationFormHeader : DFormHeader {
+  mixin(FormComponentThis!("SystemOrganizationFormHeader", true));
 }
-auto CTLOrganizationFormHeader() { return new DCTLOrganizationFormHeader(); }
-auto CTLOrganizationFormHeader(DForm myForm) { return new DCTLOrganizationFormHeader(myForm); }
+mixin(FormComponentCalls!("SystemOrganizationFormHeader", true));
 
 unittest {
-  assert(CTLOrganizationFormHeader);
+  assert(SystemOrganizationFormHeader);
 }

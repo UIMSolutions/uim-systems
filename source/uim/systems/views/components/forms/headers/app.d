@@ -3,13 +3,11 @@ module uim.systems.views.components.forms.headers.app;
 @safe:
 import uim.systems;
 
-class DCTLAppFormHeader : DFormHeader {
-  this() { super(); }
-  this(DForm myForm) { this().form(myForm); }
+class DSystemAppFormHeader : DFormHeader {
+  mixin(FormComponentThis!("SystemAppFormHeader", true));
 }
-auto CTLAppFormHeader() { return new DCTLAppFormHeader(); }
-auto CTLAppFormHeader(DForm myForm) { return new DCTLAppFormHeader(myForm); }
+mixin(FormComponentCalls!("SystemAppFormHeader", true));
 
 unittest {
-  assert(CTLAppFormHeader);
+  assert(SystemAppFormHeader);
 }

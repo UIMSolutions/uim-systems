@@ -3,13 +3,11 @@ module uim.systems.views.components.forms.headers.site;
 @safe:
 import uim.systems;
 
-class DCTLSiteFormHeader : DFormHeader {
-  this() { super(); }
-  this(DForm myForm) { this().form(myForm); }
+class DSystemSiteFormHeader : DFormHeader {
+  mixin(FormComponentThis!("SystemSiteFormHeader", true));
 }
-auto CTLSiteFormHeader() { return new DCTLSiteFormHeader(); }
-auto CTLSiteFormHeader(DForm myForm) { return new DCTLSiteFormHeader(myForm); }
+mixin(FormComponentCalls!("SystemSiteFormHeader", true));
 
 unittest {
-  assert(CTLSiteFormHeader);
+  assert(SystemSiteFormHeader);
 }

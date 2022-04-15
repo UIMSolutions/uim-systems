@@ -6,12 +6,12 @@ import uim.systems;
 class DCTLRightForm : DForm {
   this() { super();
     this
-    .content(CTLRightFormContent);
+    .content(SystemRightFormContent);
   }
     this(string rootPath, CRUDModes crudMode = CRUDModes.Read) { 
           this().rootPath(rootPath).crudMode(crudMode);
     this
-    .content(CTLRightFormContent);
+    .content(SystemRightFormContent);
   }
   this(DAPPView myView) { this().view(myView); }
   this(DOOPEntity myEntity) { this().entity(myEntity); }

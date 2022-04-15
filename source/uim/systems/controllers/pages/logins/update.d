@@ -34,7 +34,7 @@ class DSystemLoginUpdatePageController : DSystemUpdatePageController {
       myForm
          .method("post").action(this.rootPath~"/actions/update")
         .content(
-          SystemApiFormContent(myForm)); 
+          SystemLoginFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

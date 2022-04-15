@@ -36,7 +36,8 @@ class DSystemPasswordCreatePageController : DSystemCreatePageController {
         .rootPath(this.rootPath)
         .method("post")
         .action(this.rootPath~"/actions/create")
-        .content(SystemApiFormContent(myForm));
+        .content(
+          SystemPasswordFormContent(myForm));
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

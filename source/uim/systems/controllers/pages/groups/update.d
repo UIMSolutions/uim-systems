@@ -33,7 +33,7 @@ class DSystemGroupUpdatePageController : DSystemUpdatePageController {
       myForm
          .method("post").action(this.rootPath~"/actions/update")
         .content(
-          SystemApiFormContent(myForm)); 
+          SystemGroupFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

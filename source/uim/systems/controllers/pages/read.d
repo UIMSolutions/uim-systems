@@ -7,7 +7,7 @@ class DSystemReadPageController : DSystemEntityPageController {
   mixin(APPPageControllerThis!("SystemReadPageController"));
   
   override void beforeResponse(STRINGAA options = null) {
-    debugMethodCall(moduleName!DSystemApisReadPageController~":DSystemApisReadPageController::beforeResponse");
+    debugMethodCall(moduleName!DSystemReadPageController~":DSystemReadPageController::beforeResponse");
     super.beforeResponse(options);
     if (hasError || "redirect" in options) { return; }
 

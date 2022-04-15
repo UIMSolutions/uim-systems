@@ -3,14 +3,12 @@ module uim.systems.views.components.forms.headers.user;
 @safe:
 import uim.systems;
 
-class DCTLUserFormHeader : DFormHeader {
-  this() { super(); }
-  this(DForm myForm) { this().form(myForm); }
+class DSystemUserFormHeader : DFormHeader {
+  mixin(FormComponentThis!("SystemUserFormHeader", true));
 }
-auto CTLUserFormHeader() { return new DCTLUserFormHeader(); }
-auto CTLUserFormHeader(DForm myForm) { return new DCTLUserFormHeader(myForm); }
+mixin(FormComponentCalls!("SystemUserFormHeader", true));
 
 version(uim_systems) {
   unittest {
-    assert(CTLUserFormHeader);
+    assert(SystemUserFormHeader);
 }}

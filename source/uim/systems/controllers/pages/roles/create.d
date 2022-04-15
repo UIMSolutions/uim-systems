@@ -35,7 +35,8 @@ class DSystemRoleCreatePageController : DSystemCreatePageController {
         .rootPath(this.rootPath)
         .method("post")
         .action(this.rootPath~"/actions/create")
-        .content(SystemApiFormContent(myForm));
+        .content(
+          SystemRoleFormContent(myForm));
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

@@ -1,35 +1,39 @@
-module uim.systems.views.components.forms.bodies.user;
+module uim.systems.views.components.forms.bodies.session;
 
 @safe:
 import uim.systems;
 
-class DSystemUserFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemUserFormContent", true));
+class DSystemSessionFormContent : DEntityFormContent {
+  mixin(FormComponentThis!("SystemSessionFormContent", true));
 
   override void initialize() {
     super.initialize;
 
     this
     .crudMode(CRUDModes.Create)
-    .fields(["active", "name", "display", "valid", "otp", "password", "description"])
-    .formGroupHandler(SYSFormGroupHandler);   
+    .fields([/* "active",  */"name", "display", /* "valid", "otp", "password",  */"description"])
+    .formGroupHandler(SYSFormGroupHandler);    
   }
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
+    debug writeln("DSystemSessionFormContent:formGroup(field, readonly, options)");
+
     if (entity) switch(field) {
-      case "active": return SystemActiveFormGroup(this.form).entity(this.entity).toH5(options);      
+      /* case "active": return SystemActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
       case "valid": return SystemValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
       case "validFrom": return SystemValidFromFormGroup(this.form).entity(this.entity).toH5(options);
       case "validUntil": return SystemValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
       case "otp": return SystemOtpFormGroup(this.form).entity(this.entity).toH5(options);
+
       case "password": return SystemPasswordFormGroup(this.form).entity(this.entity).toH5(options);
+          * /
       default: return super.formGroup(field, readonly, options); 
     }
     return null;
   } */
 }
-mixin(FormComponentCalls!("SystemUserFormContent", true));
+mixin(FormComponentCalls!("SystemSessionFormContent", true));
 
 unittest {
-  assert(SystemUserFormContent);
+  assert(SystemSessionFormContent);
 }

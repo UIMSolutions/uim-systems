@@ -10,7 +10,7 @@ class DCTLPasswordForm : DForm {
     super.initialize;
 
     this
-    .content(CTLPasswordFormContent);
+    .content(SystemPasswordFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLPasswordForm", true));

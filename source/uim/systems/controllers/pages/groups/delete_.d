@@ -34,7 +34,7 @@ class DSystemGroupDeletePageController : DSystemDeletePageController {
       myForm
         .method("post").action(this.rootPath~"/actions/delete")
         .content(
-          SystemApiFormContent(myForm)); 
+          SystemGroupFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

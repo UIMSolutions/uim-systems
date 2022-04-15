@@ -34,7 +34,7 @@ class DSystemUserUpdatePageController : DSystemUpdatePageController {
       myForm
          .method("post").action(this.rootPath~"/actions/update")
         .content(
-          SystemApiFormContent(myForm)); 
+          SystemUserFormContent(myForm)); 
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

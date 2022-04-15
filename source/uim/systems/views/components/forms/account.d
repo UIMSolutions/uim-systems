@@ -10,7 +10,7 @@ class DCTLAccountForm : DForm {
     super.initialize;
 
     this
-      .content(CTLAccountFormContent);
+      .content(SystemAccountFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLAccountForm", true));

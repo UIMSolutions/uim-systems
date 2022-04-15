@@ -10,7 +10,7 @@ class DCTLOrganizationForm : DForm {
     super.initialize;
 
     this
-    .content(CTLOrganizationFormContent);
+    .content(SystemOrganizationFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLOrganizationForm", true));

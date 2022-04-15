@@ -8,7 +8,7 @@ class DCTLGroupForm : DForm {
 
   override void initialize() {
     this
-    .content(CTLGroupFormContent);
+    .content(SystemGroupFormContent);
   }
 }
 mixin(ViewComponentCalls!("CTLGroupForm", true));

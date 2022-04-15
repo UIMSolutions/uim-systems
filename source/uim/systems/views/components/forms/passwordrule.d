@@ -6,12 +6,12 @@ import uim.systems;
 class DCTLPasswordRuleForm : DForm {
   this() { super();
     this
-    .content(CTLPasswordRuleFormContent);
+    .content(SystemPasswordRuleFormContent);
   }
   this(string rootPath, CRUDModes crudMode = CRUDModes.Read) { 
         this().rootPath(rootPath).crudMode(crudMode);
     this
-    .content(CTLPasswordRuleFormContent);
+    .content(SystemPasswordRuleFormContent);
   }
   this(DAPPView myView) { this().view(myView); }
   this(DOOPEntity myEntity) { this().entity(myEntity); }
