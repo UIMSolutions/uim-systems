@@ -35,9 +35,9 @@ class DSystemRightIndexPageController : DSystemEntitiesPageController {
       myForm
        .rootPath("/system/rights")
        .content(
-          EntitiesFormContent(frm))
+          EntitiesFormContent(myForm))
         .header(
-          FormHeader(frm)
+          FormHeader(myForm)
             .mainTitle("Rechte")
             .subTitle("Rechte anzeigen")
             .actions([["print", "export"]]));

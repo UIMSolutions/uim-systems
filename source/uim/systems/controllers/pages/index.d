@@ -30,9 +30,9 @@ class DSystemIndexPageController : DSystemEntityPageController {
         debug writeln("Has Site", site.id, "/", site.name);
         session["siteId"] = site.id.toString;
         this.view(
-          SystemIndexWithSiteView(this)
+          /* SystemIndexWithSiteView(this)
           .site(site)
-          .layout(this.layout));
+          .layout(this.layout) */);
       }
       else {
         debug writeln("No Site");
@@ -41,9 +41,9 @@ class DSystemIndexPageController : DSystemEntityPageController {
         debug writeln("Found sites = ", dbSites.length);
 
         this.view(
-          SystemIndexNoSiteView(this)
+          /* SystemIndexNoSiteView(this)
           .sites(dbSites)
-          .layout(this.layout));
+          .layout(this.layout) */);
       }
     }
     else {

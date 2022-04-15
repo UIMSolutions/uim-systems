@@ -7,7 +7,7 @@ class DSystemUpdatePageController : DSystemEntityPageController {
   mixin(APPPageControllerThis!("SystemUpdatePageController"));
 
   override void beforeResponse(STRINGAA options = null) {
-    debugMethodCall(moduleName!DSystemPackagesUpdatePageController~":DSystemPackagesUpdatePageController("~this.name~")::beforeResponse");
+    debugMethodCall(moduleName!DSystemUpdatePageController~":DSystemUpdatePageController("~this.name~")::beforeResponse");
     super.beforeResponse(options);
     if (hasError || "redirect" in options) { return; }
 
