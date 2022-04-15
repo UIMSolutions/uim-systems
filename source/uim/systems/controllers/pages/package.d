@@ -20,9 +20,12 @@ public import uim.systems.controllers.pages.groups;
 public import uim.systems.controllers.pages.logins;
 public import uim.systems.controllers.pages.organizations;
 public import uim.systems.controllers.pages.passwords;
+public import uim.systems.controllers.pages.passwordrules;
 public import uim.systems.controllers.pages.requests;
 public import uim.systems.controllers.pages.rights;
 public import uim.systems.controllers.pages.roles;
 public import uim.systems.controllers.pages.sessions;
+public import uim.systems.controllers.pages.sites;
+public import uim.systems.controllers.pages.tenant;
 public import uim.systems.controllers.pages.users;
 

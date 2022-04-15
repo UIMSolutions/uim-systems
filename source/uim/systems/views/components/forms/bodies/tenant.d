@@ -1,0 +1,39 @@
+module uim.systems.views.components.forms.bodies.tenant;
+
+@safe:
+import uim.systems;
+
+class DSystemTenantFormContent : DEntityFormContent {
+  mixin(FormComponentThis!("SystemTenantFormContent", true));
+
+  override void initialize() {
+    super.initialize;
+
+    this
+    .crudMode(CRUDModes.Create)
+    .fields([/* "active",  */"name", "display", /* "valid", "otp", "password",  */"description"])
+    .formGroupHandler(SYSFormGroupHandler);    
+  }
+  
+/*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
+    debug writeln("DSystemTenantFormContent:formGroup(field, readonly, options)");
+
+    if (entity) switch(field) {
+      /* case "active": return SystemActiveFormGroup(this.form).entity(this.entity).toH5(options);      case "valid":
+      case "valid": return SystemValidDatesFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validFrom": return SystemValidFromFormGroup(this.form).entity(this.entity).toH5(options);
+      case "validUntil": return SystemValidUntilFormGroup(this.form).entity(this.entity).toH5(options);
+      case "otp": return SystemOtpFormGroup(this.form).entity(this.entity).toH5(options);
+
+      case "password": return SystemPasswordFormGroup(this.form).entity(this.entity).toH5(options);
+          * /
+      default: return super.formGroup(field, readonly, options); 
+    }
+    return null;
+  } */
+}
+mixin(FormComponentCalls!("SystemTenantFormContent", true));
+
+unittest {
+  assert(SystemTenantFormContent);
+}

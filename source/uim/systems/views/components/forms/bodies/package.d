@@ -15,5 +15,6 @@ public import uim.systems.views.components.forms.bodies.request;
 public import uim.systems.views.components.forms.bodies.right;
 public import uim.systems.views.components.forms.bodies.role;
 public import uim.systems.views.components.forms.bodies.site;
+public import uim.systems.views.components.forms.bodies.tenant;
 public import uim.systems.views.components.forms.bodies.session;
 public import uim.systems.views.components.forms.bodies.user;
