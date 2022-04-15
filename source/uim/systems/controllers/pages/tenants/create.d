@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.create;
+module uim.systems.controllers.pages.tenants.create;
 
 @safe:
 import uim.systems;
@@ -10,8 +10,8 @@ class DSystemTenantCreatePageController : DSystemCreatePageController {
     super.initialize;
 
     this
-      .collectionName("system_users")
-      .rootPath("/system/users");
+      .collectionName("system_tenants")
+      .rootPath("/system/tenants");
 
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);

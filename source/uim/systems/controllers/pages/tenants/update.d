@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.update;
+module uim.systems.controllers.pages.tenants.update;
 
 @safe:
 import uim.systems;
@@ -10,8 +10,8 @@ class DSystemTenantUpdatePageController : DSystemUpdatePageController {
     super.initialize;
 
     this
-      .collectionName("system_users")
-      .rootPath("/system/users");
+      .collectionName("system_tenants")
+      .rootPath("/system/tenants");
 
     auto myView = APPEntityUpdateView(this)
       .rootPath(this.rootPath);
@@ -21,13 +21,13 @@ class DSystemTenantUpdatePageController : DSystemUpdatePageController {
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .link(["href":this.rootPath], "Anwender")
-        .item(["active", "fw-bold"], "Anzeigen")
+        .link(["href":this.rootPath], "Tenant")
+        .item(["active", "fw-bold"], "Bearbeiten")
       );
 
       myHeader
         .breadcrumbs(bc)
-        .title(titleCreate("Anwender anzeigen"));
+        .title(titleCreate("Tenant bearbeiten"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
@@ -38,8 +38,8 @@ class DSystemTenantUpdatePageController : DSystemUpdatePageController {
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
-          .mainTitle("Anwender")
-          .subTitle("Anwender anzeigen");
+          .mainTitle("Tenant")
+          .subTitle("Tenant bearbeiten");
       }
 
       this

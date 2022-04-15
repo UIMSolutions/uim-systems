@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.read;
+module uim.systems.controllers.pages.sites.read;
 
 @safe:
 import uim.systems;
@@ -10,8 +10,8 @@ class DSystemSiteReadPageController : DSystemReadPageController {
     super.initialize;
 
     this
-      .collectionName("system_users")
-      .rootPath("/system/users");
+      .collectionName("system_sites")
+      .rootPath("/system/sites");
 
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
@@ -21,13 +21,13 @@ class DSystemSiteReadPageController : DSystemReadPageController {
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .link(["href":this.rootPath], "Anwender")
+        .link(["href":this.rootPath], "Sites")
         .item(["active", "fw-bold"], "Anzeigen")
       );
 
       myHeader
         .breadcrumbs(bc)
-        .title(titleCreate("Anwender anzeigen"));
+        .title(titleCreate("Site anzeigen"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
@@ -38,8 +38,8 @@ class DSystemSiteReadPageController : DSystemReadPageController {
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
-          .mainTitle("Anwender")
-          .subTitle("Anwender anzeigen");      
+          .mainTitle("Site")
+          .subTitle("Site anzeigen");      
       }
 
       this

@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.delete_;
+module uim.systems.controllers.pages.tenants.delete_;
 
 @safe:
 import uim.systems;
@@ -10,8 +10,8 @@ class DSystemTenantDeletePageController : DSystemDeletePageController {
     super.initialize;
 
     this
-      .collectionName("system_users")
-      .rootPath("/system/users");
+      .collectionName("system_tenants")
+      .rootPath("/system/tenants");
 
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);

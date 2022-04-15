@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.read;
+module uim.systems.controllers.pages.tenants.read;
 
 @safe:
 import uim.systems;
@@ -10,8 +10,8 @@ class DSystemTenantReadPageController : DSystemReadPageController {
     super.initialize;
 
     this
-      .collectionName("system_users")
-      .rootPath("/system/users");
+      .collectionName("system_tenants")
+      .rootPath("/system/tenants");
 
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);

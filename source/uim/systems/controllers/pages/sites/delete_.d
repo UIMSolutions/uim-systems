@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.delete_;
+module uim.systems.controllers.pages.sites.delete_;
 
 @safe:
 import uim.systems;
@@ -10,8 +10,8 @@ class DSystemSiteDeletePageController : DSystemDeletePageController {
     super.initialize;
 
     this
-      .collectionName("system_users")
-      .rootPath("/system/users");
+      .collectionName("system_sites")
+      .rootPath("/system/sites");
 
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
@@ -21,13 +21,13 @@ class DSystemSiteDeletePageController : DSystemDeletePageController {
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "system")
-        .link(["href":this.rootPath], "Anwender")
+        .link(["href":this.rootPath], "Sites")
         .item(["active", "fw-bold"], "Löschen")
       );
 
       myHeader
         .breadcrumbs(bc)
-        .title(titleDelete("Anwender löschen"));
+        .title(titleDelete("Site löschen"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
@@ -38,8 +38,8 @@ class DSystemSiteDeletePageController : DSystemDeletePageController {
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
-          .mainTitle("Anwender")
-          .subTitle("Anwender löschen");
+          .mainTitle("Site")
+          .subTitle("Site löschen");
       }
 
       this

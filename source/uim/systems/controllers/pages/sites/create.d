@@ -1,4 +1,4 @@
-module source.uim.systems.controllers.pages.sites copy.create;
+module uim.systems.controllers.pages.sites.create;
 
 @safe:
 import uim.systems;

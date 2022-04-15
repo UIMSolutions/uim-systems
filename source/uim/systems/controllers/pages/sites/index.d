@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.index;
+module uim.systems.controllers.pages.sites.index;
 
 @safe:
 import uim.systems;
@@ -13,33 +13,33 @@ class DSystemSiteIndexPageController : DSystemEntitiesPageController {
  
     this
       .view(myView)
-      .rootPath("/system/users")
-      .collectionName("system_users");
+      .rootPath("/system/sites")
+      .collectionName("system_sites");
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .item(["active", "fw-bold"], "Anwender")
+        .item(["active", "fw-bold"], "Sites")
       );
 
       myHeader
-        .rootPath("/system/users")
+        .rootPath("/system/sites")
         .breadcrumbs(bc)
-        .title(titleView("Übersicht UsAnwenderers"))
+        .title(titleView("Übersicht Sites"))
         .actions([["refresh", "list", "create"]]);
     }
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/users")
+       .rootPath("/system/sites")
        .content(
           EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
-            .mainTitle("Anwender")
-            .subTitle("Anwender anzeigen")
+            .mainTitle("Sites")
+            .subTitle("Sites anzeigen")
             .actions([["print", "export"]]));
     } 
   }

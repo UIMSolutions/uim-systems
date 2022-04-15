@@ -26,6 +26,6 @@ public import uim.systems.controllers.pages.rights;
 public import uim.systems.controllers.pages.roles;
 public import uim.systems.controllers.pages.sessions;
 public import uim.systems.controllers.pages.sites;
-public import uim.systems.controllers.pages.tenant;
+public import uim.systems.controllers.pages.tenants;
 public import uim.systems.controllers.pages.users;
 

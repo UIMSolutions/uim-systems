@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.index;
+module uim.systems.controllers.pages.tenants.index;
 
 @safe:
 import uim.systems;
@@ -13,19 +13,19 @@ class DSystemTenantIndexPageController : DSystemEntitiesPageController {
  
     this
       .view(myView)
-      .rootPath("/system/users")
-      .collectionName("system_users");
+      .rootPath("/system/tenants")
+      .collectionName("system_tenants");
 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .item(["active", "fw-bold"], "Anwender")
+        .item(["active", "fw-bold"], "Tenants")
       );
 
       myHeader
-        .rootPath("/system/users")
+        .rootPath("/system/tenants")
         .breadcrumbs(bc)
         .title(titleView("Übersicht UsAnwenderers"))
         .actions([["refresh", "list", "create"]]);
@@ -33,7 +33,7 @@ class DSystemTenantIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/users")
+       .rootPath("/system/tenants")
        .content(
           EntitiesFormContent(frm))
         .header(

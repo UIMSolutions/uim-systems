@@ -1,4 +1,4 @@
-module uim.systems.controllers.pages.users.update;
+module uim.systems.controllers.pages.sites.update;
 
 @safe:
 import uim.systems;
@@ -10,8 +10,8 @@ class DSystemSiteUpdatePageController : DSystemUpdatePageController {
     super.initialize;
 
     this
-      .collectionName("system_users")
-      .rootPath("/system/users");
+      .collectionName("system_sites")
+      .rootPath("/system/sites");
 
     auto myView = APPEntityUpdateView(this)
       .rootPath(this.rootPath);
@@ -21,13 +21,13 @@ class DSystemSiteUpdatePageController : DSystemUpdatePageController {
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
         .link(["href":"/system"], "System")
-        .link(["href":this.rootPath], "Anwender")
+        .link(["href":this.rootPath], "Sites")
         .item(["active", "fw-bold"], "Anzeigen")
       );
 
       myHeader
         .breadcrumbs(bc)
-        .title(titleCreate("Anwender anzeigen"));
+        .title(titleCreate("Site anzeigen"));
     }
 
     if (auto myForm = cast(DForm)myView.form) {
@@ -38,8 +38,8 @@ class DSystemSiteUpdatePageController : DSystemUpdatePageController {
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader
-          .mainTitle("Anwender")
-          .subTitle("Anwender anzeigen");
+          .mainTitle("Site")
+          .subTitle("Site anzeigen");
       }
 
       this
