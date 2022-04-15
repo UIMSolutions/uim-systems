@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.app;
 import uim.systems;
 
 class DSystemAppFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemAppFormContent", true));
+  mixin(FormComponentThis!("SystemAppFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -15,7 +15,7 @@ class DSystemAppFormContent : DEntityFormContent {
     .formGroupHandler(SYSFormGroupHandler);   
   }
 } 
-mixin(ViewComponentCalls!("SystemAppFormContent", true));
+mixin(FormComponentCalls!("SystemAppFormContent", true));
 
 unittest {
   assert(SystemAppFormContent);

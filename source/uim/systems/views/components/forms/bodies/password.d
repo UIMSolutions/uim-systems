@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.password;
 import uim.systems;
 
 class DSystemPasswordFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemPasswordFormContent", true));
+  mixin(FormComponentThis!("SystemPasswordFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -28,7 +28,7 @@ class DSystemPasswordFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemPasswordFormContent", true));
+mixin(FormComponentCalls!("SystemPasswordFormContent", true));
 
 unittest {
   assert(SystemPasswordFormContent);

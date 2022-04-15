@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.user;
 import uim.systems;
 
 class DSystemUserFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemUserFormContent", true));
+  mixin(FormComponentThis!("SystemUserFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -28,7 +28,7 @@ class DSystemUserFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemUserFormContent", true));
+mixin(FormComponentCalls!("SystemUserFormContent", true));
 
 unittest {
   assert(SystemUserForm);

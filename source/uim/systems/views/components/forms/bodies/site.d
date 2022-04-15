@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.site;
 import uim.systems;
 
 class DSystemSiteFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemSiteFormContent", true));
+  mixin(FormComponentThis!("SystemSiteFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -32,7 +32,7 @@ class DSystemSiteFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemSiteFormContent", true));
+mixin(FormComponentCalls!("SystemSiteFormContent", true));
 
 unittest {
   assert(SystemSiteFormContent);

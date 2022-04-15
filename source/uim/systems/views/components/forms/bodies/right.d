@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.right;
 import uim.systems;
 
 class DSystemRightFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemRightFormContent", true));
+  mixin(FormComponentThis!("SystemRightFormContent", true));
 
   override void initialize() {
     super.initialize;
@@ -31,7 +31,7 @@ class DSystemRightFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemRightFormContent", true));
+mixin(FormComponentCalls!("SystemRightFormContent", true));
 
 unittest {
   assert(SystemRightFormContent);
