@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.groups.active;
 @safe:
 import uim.systems;
 
-class DCTLActiveFormGroup : DAPPSwitchFormGroup {
-  mixin(ViewComponentThis!("CTLActiveFormGroup", true));
+class DCTLActiveFormInput : DSwitchFormInput {
+  mixin(ViewComponentThis!("CTLActiveFormInput", true));
 
   override void initialize() {
     super.initialize;
@@ -17,4 +17,4 @@ class DCTLActiveFormGroup : DAPPSwitchFormGroup {
     .fieldValue("false");
   }
 }
-mixin(ViewComponentCalls!("CTLActiveFormGroup", true));
+mixin(ViewComponentCalls!("CTLActiveFormInput", true));

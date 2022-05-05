@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.groups.otp;
 @safe:
 import uim.systems;
 
-class DCTLOtpFormGroup : DAPPSwitchFormGroup {
-  mixin(ViewComponentThis!("CTLOtpFormGroup", true));
+class DCTLOtpFormInput : DSwitchFormInput {
+  mixin(ViewComponentThis!("CTLOtpFormInput", true));
 
   override void initialize() {
     super.initialize;
@@ -17,4 +17,4 @@ class DCTLOtpFormGroup : DAPPSwitchFormGroup {
     .fieldValue("false");
   }
 }
-mixin(ViewComponentCalls!("CTLOtpFormGroup", true));
+mixin(ViewComponentCalls!("CTLOtpFormInput", true));

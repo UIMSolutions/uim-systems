@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.groups.validfrom;
 @safe:
 import uim.systems;
 
-class DCTLValidFromFormGroup : DAPPDateFormGroup {
-  mixin(ViewComponentThis!("CTLValidFromFormGroup", true));
+class DCTLValidFromFormInput : DDateFormInput {
+  mixin(ViewComponentThis!("CTLValidFromFormInput", true));
 
   override void initialize() {
     super.initialize;
@@ -16,4 +16,4 @@ class DCTLValidFromFormGroup : DAPPDateFormGroup {
     .fieldName("validFrom");
   }
 }
-mixin(ViewComponentCalls!("CTLValidFromFormGroup", true));
+mixin(ViewComponentCalls!("CTLValidFromFormInput", true));

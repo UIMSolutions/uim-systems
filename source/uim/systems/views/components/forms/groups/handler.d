@@ -3,7 +3,7 @@ module uim.systems.views.components.forms.groups.handler;
 @safe:
 import uim.systems;
 
-class DSYSFormGroupHandler : DFormGroupHandler {
+class DSYSFormGroupHandler : DFormInputHandler {
   mixin(ViewComponentThis!("SYSFormGroupHandler", true));
 
   override void initialize() {
