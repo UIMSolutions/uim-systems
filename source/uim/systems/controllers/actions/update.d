@@ -24,9 +24,9 @@ class DSystemUpdateAction : DAPPActionController {
       auto entity = collection.findOne(UUID(entityId));
       
       entity.fromRequest(options);
-      foreach(name, attribute; entity.attributes) { // Workaround :-O
-        if (auto booleanAttribute = cast(DOOPBooleanAttribute)attribute) {
-          if ("entity_"~name !in options) booleanAttribute.value(false);  
+      foreach(name, value; entity.values.items) { // Workaround :-O
+        if (auto booleanValue = cast(DBooleanValue)value) {
+          if ("entity_"~name !in options) booleanValue(false);  
         }
       }
 

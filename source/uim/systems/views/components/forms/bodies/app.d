@@ -12,7 +12,7 @@ class DSystemAppFormContent : DEntityFormContent {
     this
     .crudMode(CRUDModes.Create)
     .fields([/* "active",  */"name", "display", /* "valid", "otp", "password",  */"description"])
-    .formGroupHandler(SYSFormGroupHandler);   
+    .inputHandler(SYSFormInputHandler);   
   }
 } 
 mixin(FormComponentCalls!("SystemAppFormContent", true));

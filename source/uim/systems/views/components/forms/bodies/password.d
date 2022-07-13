@@ -12,7 +12,7 @@ class DSystemPasswordFormContent : DEntityFormContent {
     this
     .crudMode(CRUDModes.Create)
     .fields([/* "active",  */"name", "display", /* "valid", "otp", "password",  */"description"])
-    .formGroupHandler(SYSFormGroupHandler);   
+    .inputHandler(SYSFormInputHandler);   
   }
   
 /*   override DH5Obj[] formGroup(string field, bool readonly, STRINGAA options = null) {
