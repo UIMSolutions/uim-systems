@@ -2,7 +2,7 @@
 	"authors": [
 		"UI Manufaktur Team"
 	],
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"name": "uim-systems",
 	"copyright": "Copyright © 2017 - 2021, UI Manufaktur UG",
 	"dependencies": {
