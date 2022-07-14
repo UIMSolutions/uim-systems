@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .dub/code/uim-systems-test-library-unittest-linux.posix-x86_64-dmd_v2.098.0-F6B98C9E8266AABA7425685126800455_dub_test_root.d
 .dub/code/uim-systems-test-library-unittest-linux.posix-x86_64-dmd_v2.098.0-3A6BDC71579F7C58F32A7D21170EF805_dub_test_root.d
 .dub/code/uim-systems-test-library-unittest-linux.posix-x86_64-dmd_v2.098.0-3A12708CAE306D10E31DB2C03D520F9E_dub_test_root.d
@@ -20,3 +21,29 @@
 uim-systems-test-library
 .dub/build/uim-systems-test-library-unittest-linux.posix-x86_64-dmd_v2.098.0-7E658947626E4ECE0B579A40BA53307F/uim-systems-test-library
 .dub/build/uim-systems-test-library-unittest-linux.posix-x86_64-dmd_v2.098.0-7E658947626E4ECE0B579A40BA53307F/uim-systems-test-library.o
+=======
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+
+# DUB
+.dub
+docs.json
+__dummy.html
+docs/
+
+# Code coverage
+*.lst
+>>>>>>> 94ec732ec4039a32ace0859d5c8d07097cb4b1ca
