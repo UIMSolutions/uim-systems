@@ -10,7 +10,7 @@ class DSYSFormInputHandler : DFormInputHandler {
     super.initialize;
 
     this
-      .addFormGroups([
+      .formInputs([
         "active": CTLActiveFormGroup, 
         "valid": CTLValidDatesFormGroup, 
         "validFrom": CTLValidFromFormGroup, 
