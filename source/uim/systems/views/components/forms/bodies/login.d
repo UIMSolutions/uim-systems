@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.login;
 import uim.systems;
 
 class DSystemLoginFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemLoginFormContent", true));
+  mixin(ViewComponentThis!("SystemLoginFormContent"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -32,7 +32,7 @@ class DSystemLoginFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemLoginFormContent", true));
+mixin(ViewComponentCalls!("SystemLoginFormContent"));
 
 unittest {
   assert(SystemLoginFormContent);

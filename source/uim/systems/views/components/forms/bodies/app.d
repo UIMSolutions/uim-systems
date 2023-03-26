@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.app;
 import uim.systems;
 
 class DSystemAppFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemAppFormContent", true));
+  mixin(ViewComponentThis!("SystemAppFormContent"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -15,7 +15,7 @@ class DSystemAppFormContent : DEntityFormContent {
     .inputHandler(SYSFormInputHandler);   
   }
 } 
-mixin(ViewComponentCalls!("SystemAppFormContent", true));
+mixin(ViewComponentCalls!("SystemAppFormContent"));
 
 unittest {
   assert(SystemAppFormContent);

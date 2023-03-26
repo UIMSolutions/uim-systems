@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.password;
 import uim.systems;
 
 class DSystemPasswordFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemPasswordFormContent", true));
+  mixin(ViewComponentThis!("SystemPasswordFormContent"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -28,7 +28,7 @@ class DSystemPasswordFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemPasswordFormContent", true));
+mixin(ViewComponentCalls!("SystemPasswordFormContent"));
 
 unittest {
   assert(SystemPasswordFormContent);

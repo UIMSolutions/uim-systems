@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.organization;
 import uim.systems;
 
 class DSystemOrganizationFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemOrganizationFormContent", true));
+  mixin(ViewComponentThis!("SystemOrganizationFormContent"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -26,7 +26,7 @@ class DSystemOrganizationFormContent : DEntityFormContent {
     }
   } */
 }
-mixin(ViewComponentCalls!("SystemOrganizationFormContent", true));
+mixin(ViewComponentCalls!("SystemOrganizationFormContent"));
 
 unittest {
   assert(SystemOrganizationFormContent);
