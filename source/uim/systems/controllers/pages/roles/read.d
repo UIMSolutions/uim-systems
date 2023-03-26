@@ -56,7 +56,7 @@ class DSystemRoleReadPageController : DSystemReadPageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemRoleReadPageController"));
+mixin(PageControllerCalls!("SystemRoleReadPageController"));
 
 version(test_uim_systems) {
   unittest {

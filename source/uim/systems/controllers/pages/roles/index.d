@@ -44,7 +44,7 @@ class DSystemRoleIndexPageController : DSystemEntitiesPageController {
     } 
   }
 }
-mixin(APPPageControllerCalls!("SystemRoleIndexPageController"));
+mixin(PageControllerCalls!("SystemRoleIndexPageController"));
 
 version(test_uim_systems) {
   unittest {

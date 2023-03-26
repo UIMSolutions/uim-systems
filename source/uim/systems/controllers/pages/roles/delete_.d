@@ -54,7 +54,7 @@ class DSystemRoleDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemRoleDeletePageController"));
+mixin(PageControllerCalls!("SystemRoleDeletePageController"));
 
 version(test_uim_systems) {
   unittest {

@@ -59,7 +59,7 @@ class DSystemRoleUpdatePageController : DSystemUpdatePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemRoleUpdatePageController"));
+mixin(PageControllerCalls!("SystemRoleUpdatePageController"));
 
 version(test_uim_systems) {
   unittest {

@@ -56,7 +56,7 @@ class DSystemSessionDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemSessionDeletePageController"));
+mixin(PageControllerCalls!("SystemSessionDeletePageController"));
 
 version(test_uim_systems) {
   unittest {
