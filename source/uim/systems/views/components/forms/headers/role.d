@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemRoleFormHeader : DFormHeader {
   mixin(ViewComponentThis!("SystemRightFormHeader", true));
 }
-mixin(FormComponentCalls!("SystemRightFormHeader", true));
+mixin(ViewComponentCalls!("SystemRightFormHeader", true));
 
 version(uim_systems) {
   unittest {

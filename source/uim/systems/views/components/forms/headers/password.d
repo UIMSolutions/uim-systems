@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemPasswordFormHeader : DFormHeader {
   mixin(ViewComponentThis!("SystemPasswordFormHeader", true));
 }
-mixin(FormComponentCalls!("SystemPasswordFormHeader", true));
+mixin(ViewComponentCalls!("SystemPasswordFormHeader", true));
 
 version(uim_systems) {
   unittest {
