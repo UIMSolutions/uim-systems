@@ -16,7 +16,7 @@ class DSystemGroupUpdatePageController : DSystemUpdatePageController {
     auto myView = APPEntityUpdateView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .breadcrumbs(
           BS5Breadcrumb(
@@ -27,13 +27,13 @@ class DSystemGroupUpdatePageController : DSystemUpdatePageController {
               .item(["active", "fw-bold"], "Anzeigen")
         ))
         .title(titleCreate("Gruppe anzeigen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-         .method("post").action(this.rootPath~"/actions/update")
-        .content(
-          SystemGroupFormContent(myForm)); 
+         .method("post").action(this.rootPath~"/actions/update");
+/*         .content(
+          SystemGroupFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

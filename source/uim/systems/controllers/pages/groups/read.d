@@ -16,7 +16,7 @@ class DSystemGroupReadPageController : DSystemReadPageController {
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -28,13 +28,13 @@ class DSystemGroupReadPageController : DSystemReadPageController {
       myHeader
         .breadcrumbs(bc)
         .title(titleCreate("Gruppe anzeigen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-         .method("post").action(this.rootPath~"/actions/read")
-        .content(
-          SystemGroupFormContent(myForm)); 
+         .method("post").action(this.rootPath~"/actions/read");
+/*         .content(
+          SystemGroupFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

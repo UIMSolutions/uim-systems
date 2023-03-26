@@ -32,9 +32,9 @@ class DSystemGroupDeletePageController : DSystemDeletePageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-        .method("post").action(this.rootPath~"/actions/delete")
-        .content(
-          SystemGroupFormContent(myForm)); 
+        .method("post").action(this.rootPath~"/actions/delete");
+        /* .content(
+          SystemGroupFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

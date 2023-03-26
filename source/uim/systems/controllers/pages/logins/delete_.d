@@ -16,7 +16,7 @@ class DSystemLoginDeletePageController : DSystemDeletePageController {
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -28,14 +28,14 @@ class DSystemLoginDeletePageController : DSystemDeletePageController {
       myHeader
         .breadcrumbs(bc)
         .title(titleDelete("Login löschen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
         .action(this.rootPath~"/actions/delete")
-        .method("post")
-        .content(
-          SystemLoginFormContent(myForm)); 
+        .method("post");
+/*         .content(
+          SystemLoginFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

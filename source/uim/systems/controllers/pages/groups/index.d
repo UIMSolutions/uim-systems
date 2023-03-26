@@ -33,14 +33,14 @@ class DSystemGroupIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/groups")
-       .content(
-          /* EntitiesFormContent(frm) */)
+       .rootPath("/system/groups");
+/*        .content(
+        EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
             .mainTitle("Groups")
             .subTitle("Groups anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

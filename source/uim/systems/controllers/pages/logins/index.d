@@ -16,7 +16,7 @@ class DSystemLoginIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/logins")
       .collectionName("system_logins");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,18 +29,18 @@ class DSystemLoginIndexPageController : DSystemEntitiesPageController {
         .breadcrumbs(bc)
         .title(titleView("Übersicht Logins"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/logins")
-       .content(
-          EntitiesFormContent(frm))
+       .rootPath("/system/logins");
+/*         .content(
+          EntitiesFormContent(frm)) 
         .header(
           FormHeader(frm)
             .mainTitle("Logins")
             .subTitle("Logins anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }
