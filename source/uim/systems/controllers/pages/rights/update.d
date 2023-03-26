@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.rights.update;
 import uim.systems;
 
 class DSystemRightUpdatePageController : DSystemUpdatePageController {
-  mixin(APPPageControllerThis!("SystemRightUpdatePageController"));
+  mixin(PageControllerThis!("SystemRightUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

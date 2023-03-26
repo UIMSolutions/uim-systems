@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.rights.read;
 import uim.systems;
 
 class DSystemRightReadPageController : DSystemReadPageController {
-  mixin(APPPageControllerThis!("SystemRightReadPageController"));
+  mixin(PageControllerThis!("SystemRightReadPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.roles.create;
 import uim.systems;
 
 class DSystemRoleCreatePageController : DSystemCreatePageController {
-  mixin(APPPageControllerThis!("SystemRoleCreatePageController"));
+  mixin(PageControllerThis!("SystemRoleCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

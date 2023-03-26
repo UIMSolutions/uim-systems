@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.rights.index;
 import uim.systems;
 
 class DSystemRightIndexPageController : DSystemEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemRightIndexPageController"));
+  mixin(PageControllerThis!("SystemRightIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

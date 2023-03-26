@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.sessions.delete_;
 import uim.systems;
 
 class DSystemSessionDeletePageController : DSystemDeletePageController {
-  mixin(APPPageControllerThis!("SystemSessionDeletePageController"));
+  mixin(PageControllerThis!("SystemSessionDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

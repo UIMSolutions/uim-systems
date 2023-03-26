@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.roles.read;
 import uim.systems;
 
 class DSystemRoleReadPageController : DSystemReadPageController {
-  mixin(APPPageControllerThis!("SystemRoleReadPageController"));
+  mixin(PageControllerThis!("SystemRoleReadPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

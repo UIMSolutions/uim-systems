@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.rights.delete_;
 import uim.systems;
 
 class DSystemRightDeletePageController : DSystemDeletePageController {
-  mixin(APPPageControllerThis!("SystemRightDeletePageController"));
+  mixin(PageControllerThis!("SystemRightDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

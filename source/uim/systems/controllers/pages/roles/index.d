@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.roles.index;
 import uim.systems;
 
 class DSystemRoleIndexPageController : DSystemEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemRoleIndexPageController"));
+  mixin(PageControllerThis!("SystemRoleIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
