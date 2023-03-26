@@ -16,7 +16,7 @@ class DSystemAppCreatePageController : DSystemCreatePageController {
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);
     
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .rootPath(this.rootPath)
         .title(titleCreate("App erstellen"))
@@ -28,7 +28,7 @@ class DSystemAppCreatePageController : DSystemCreatePageController {
               .link(["href":this.rootPath], "Apps")
               .item(["active", "fw-bold"], "Erstellen")
           ));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm

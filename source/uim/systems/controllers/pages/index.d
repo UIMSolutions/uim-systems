@@ -53,7 +53,7 @@ class DSystemIndexPageController : DSystemEntityPageController {
 
   override void afterResponse(STRINGAA options = null) {
     // debugMethodCall(moduleName!DSystemIndexPageController~":DSystemIndexPageController::afterResponse");
-    if (this.session) this.session.save;
+    // if (this.session) this.session.save;
   }
 
 }

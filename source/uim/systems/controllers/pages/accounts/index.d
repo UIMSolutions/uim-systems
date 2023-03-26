@@ -16,7 +16,7 @@ class DSystemAccountIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/accounts")
       .collectionName("system_accounts");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .rootPath("/system/accounts")
         .breadcrumbs(
@@ -28,18 +28,18 @@ class DSystemAccountIndexPageController : DSystemEntitiesPageController {
         ))
         .title(titleView("Übersicht Accounts"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/accounts")
-       .content(
-          /* EntitiesFormContent(frm) */)
+       .rootPath("/system/accounts");
+/*        .content(
+          EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
             .mainTitle("Accounts")
             .subTitle("Accounts anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

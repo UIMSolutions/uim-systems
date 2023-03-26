@@ -16,7 +16,7 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
     auto myView = APPEntityUpdateView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .breadcrumbs(
           BS5Breadcrumb(
@@ -27,7 +27,7 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
             .item(["active", "fw-bold"], "Anzeigen")
         ))
         .title(titleCreate("Account anzeigen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
