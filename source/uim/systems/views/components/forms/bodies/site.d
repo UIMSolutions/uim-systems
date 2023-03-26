@@ -32,7 +32,7 @@ class DSystemSiteFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(FormComponentCalls!("SystemSiteFormContent", true));
+mixin(ViewComponentCalls!("SystemSiteFormContent", true));
 
 unittest {
   assert(SystemSiteFormContent);

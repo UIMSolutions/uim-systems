@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemAppFormHeader : DFormHeader {
   mixin(ViewComponentThis!("SystemAppFormHeader", true));
 }
-mixin(FormComponentCalls!("SystemAppFormHeader", true));
+mixin(ViewComponentCalls!("SystemAppFormHeader", true));
 
 unittest {
   assert(SystemAppFormHeader);

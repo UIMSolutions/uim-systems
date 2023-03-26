@@ -28,7 +28,7 @@ class DSystemUserFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(FormComponentCalls!("SystemUserFormContent", true));
+mixin(ViewComponentCalls!("SystemUserFormContent", true));
 
 unittest {
   assert(SystemUserFormContent);
