@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemTenantUpdatePageController : DSystemUpdatePageController {
   mixin(APPPageControllerThis!("SystemTenantUpdatePageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
