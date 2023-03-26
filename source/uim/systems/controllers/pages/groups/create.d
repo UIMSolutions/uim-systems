@@ -36,7 +36,7 @@ class DSystemGroupCreatePageController : DSystemCreatePageController {
         .rootPath(this.rootPath)
         .method("post")
         .action(this.rootPath~"/actions/create")
-        .content(SystemGroupFormContent(myForm));
+        .content(/* SystemGroupFormContent(myForm) */);
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

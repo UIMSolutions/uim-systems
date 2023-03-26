@@ -16,7 +16,7 @@ class DSystemAccountCreatePageController : DSystemCreatePageController {
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);
     
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .rootPath(this.rootPath)
         .title(titleCreate("Account erstellen"))
@@ -28,7 +28,7 @@ class DSystemAccountCreatePageController : DSystemCreatePageController {
               .link(["href":this.rootPath], "Accounts")
               .item(["active", "fw-bold"], "Erstellen")
           ));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm

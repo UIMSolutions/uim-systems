@@ -24,17 +24,17 @@ class DSystemUpdateAction : DActionController {
       auto entity = collection.findOne(UUID(entityId));
       
       entity.fromRequest(options);
-      foreach(name, value; entity.values.items) { // Workaround :-O
+      /* foreach(name, value; entity.values.items) { // Workaround :-O
         if (auto booleanValue = cast(DBooleanValue)value) {
           if ("entity_"~name !in options) booleanValue(false);  
         }
-      }
+      } */
 
-      if (auto site = appSession.site) {
+      /* if (auto site = appSession.site) {
         database[site, collectionName].updateOne(entity);
         
         options["redirect"] = rootPath~"/view?id="~entityId;
-      }
+      } */
     }
     else {
       this.error("Entity Id not found");

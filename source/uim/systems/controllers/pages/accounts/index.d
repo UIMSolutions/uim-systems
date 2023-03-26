@@ -34,7 +34,7 @@ class DSystemAccountIndexPageController : DSystemEntitiesPageController {
       frm
        .rootPath("/system/accounts")
        .content(
-          EntitiesFormContent(frm))
+          /* EntitiesFormContent(frm) */)
         .header(
           FormHeader(frm)
             .mainTitle("Accounts")
