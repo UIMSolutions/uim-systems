@@ -3,10 +3,10 @@ module uim.systems.controllers.actions.update;
 @safe:
 import uim.systems;
 
-class DSystemUpdateAction : DAPPActionController {
-  mixin(APPControllerThis!("SystemUpdateAction"));
+class DSystemUpdateAction : DActionController {
+  mixin(ControllerThis!("SystemUpdateAction"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
@@ -41,7 +41,7 @@ class DSystemUpdateAction : DAPPActionController {
     }
 	}
 }
-mixin(APPControllerCalls!("SystemUpdateAction"));
+mixin(ControllerCalls!("SystemUpdateAction"));
 
 version(test_uim_System) {
   unittest {

@@ -3,11 +3,11 @@ module uim.systems.controllers.actions.delete_;
 @safe:
 import uim.systems;
 
-class DSystemDeleteAction : DAPPActionController {
-  mixin(APPControllerThis!("SystemDeleteAction"));
+class DSystemDeleteAction : DActionController {
+  mixin(ControllerThis!("SystemDeleteAction"));
 
-  override void initialize() {
-    super.initialize;
+  override void initialize(Json configSettings = Json(null)) {
+    super.initialize(configSettings);
 
     this
     .checks([
@@ -30,7 +30,7 @@ class DSystemDeleteAction : DAPPActionController {
     }
   }
 }
-mixin(APPControllerCalls!("SystemDeleteAction"));
+mixin(ControllerCalls!("SystemDeleteAction"));
 
 version(test_uim_System) {
   unittest {
