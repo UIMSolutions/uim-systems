@@ -16,7 +16,7 @@ class DSystemUpdatePageController : DSystemEntityPageController {
       if (auto dbEntity = database[appSession.site, this.collectionName].findOne(UUID(entityId))) {
         debug writeln("Found entity");
 
-        if (auto entityView = cast(DAPPEntityCRUDView)this.view) {
+        if (auto entityView = cast(DEntityCRUDView)this.view) {
           debug writeln("Setting entityView");
           entityView
             .entity(dbEntity)

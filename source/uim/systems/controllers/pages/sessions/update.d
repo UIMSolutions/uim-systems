@@ -15,7 +15,7 @@ class DSystemSessionUpdatePageController : DSystemUpdatePageController {
 
     auto myView = APPEntityUpdateView(this)
       .rootPath(this.rootPath);
-
+/* 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
@@ -29,12 +29,12 @@ class DSystemSessionUpdatePageController : DSystemUpdatePageController {
         .breadcrumbs(bc)
         .title(titleCreate("Session anzeigen"));
     }
-
+ */
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-         .method("post").action(this.rootPath~"/actions/update")
-        .content(
-          SystemSessionFormContent(myForm)); 
+         .method("post").action(this.rootPath~"/actions/update");
+/*         .content(
+          SystemSessionFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

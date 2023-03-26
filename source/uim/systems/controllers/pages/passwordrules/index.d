@@ -32,14 +32,15 @@ class DSystemPasswordRuleIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/passwordrules")
-       .content(
+      
+       .rootPath("/system/passwordrules");
+/*        .content(
           EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
             .mainTitle("Passwortregeln")
             .subTitle("Passwortregeln anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

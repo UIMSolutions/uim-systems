@@ -16,7 +16,7 @@ class DSystemSessionDeletePageController : DSystemDeletePageController {
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -28,7 +28,7 @@ class DSystemSessionDeletePageController : DSystemDeletePageController {
       myHeader
         .breadcrumbs(bc)
         .title(titleDelete("Session löschen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm

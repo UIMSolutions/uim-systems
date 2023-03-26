@@ -33,14 +33,14 @@ class DSystemRoleIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/roles")
-/*        .content(
-          EntitiesFormContent(frm)) */
+       .rootPath("/system/roles");
+/*                .content(
+          EntitiesFormContent(frm)) 
         .header(
           FormHeader(frm)
             .mainTitle("Rollen")
             .subTitle("Rollen anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

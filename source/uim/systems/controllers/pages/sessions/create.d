@@ -35,8 +35,8 @@ class DSystemSessionCreatePageController : DSystemCreatePageController {
       myForm
         .rootPath(this.rootPath)
         .method("post")
-        .action(this.rootPath~"/actions/create")
-        .content(SystemSessionFormContent(myForm));
+        .action(this.rootPath~"/actions/create");
+/*         .content(SystemSessionFormContent(myForm)); */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader
