@@ -32,9 +32,9 @@ class DSystemLoginReadPageController : DSystemReadPageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-         .method("post").action(this.rootPath~"/actions/read")
-        .content(
-          SystemLoginFormContent(myForm)); 
+         .method("post").action(this.rootPath~"/actions/read");
+/*         .content(
+          SystemLoginFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

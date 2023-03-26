@@ -31,9 +31,9 @@ class DSystemPasswordRuleUpdatePageController : DSystemUpdatePageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-        .method("post").action(this.rootPath~"/actions/update")
-        .content(
-          SystemPasswordRuleFormContent(myForm)); 
+        .method("post").action(this.rootPath~"/actions/update");
+/*         .content(
+          SystemPasswordRuleFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

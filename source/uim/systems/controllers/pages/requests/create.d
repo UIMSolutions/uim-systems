@@ -34,8 +34,8 @@ class DSystemRequestCreatePageController : DSystemCreatePageController {
       myForm
         .rootPath(this.rootPath)
         .method("post")
-        .action(this.rootPath~"/actions/create")
-        .content(SystemRequestFormContent(myForm));
+        .action(this.rootPath~"/actions/create");
+/*         .content(SystemRequestFormContent(myForm)); */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

@@ -33,14 +33,14 @@ class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/passwords")
-       .content(
+       .rootPath("/system/passwords");
+       /* .content(
           EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
             .mainTitle("Passwords")
             .subTitle("Passwords anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

@@ -33,14 +33,14 @@ class DSystemAppIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/apps")
-       .content(
+       .rootPath("/system/apps");
+/*        .content(
           EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
             .mainTitle("Apps")
             .subTitle("Apps anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }
