@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemOrganizationFormContent : DEntityFormContent {
   mixin(FormComponentThis!("SystemOrganizationFormContent", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

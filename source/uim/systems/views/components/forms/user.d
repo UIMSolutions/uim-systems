@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLUserForm : DForm {
   mixin(ViewComponentThis!("CTLUserForm", true));
 
-  override void initialize() { 
+  override void initialize(Json configSettings = Json(null)) { 
     super.initialize; 
     
     this

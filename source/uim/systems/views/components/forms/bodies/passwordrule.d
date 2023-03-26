@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemPasswordRuleFormContent : DEntityFormContent {
   mixin(FormComponentThis!("SystemPasswordRuleFormContent", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
