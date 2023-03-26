@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLPasswordFormInput : DFormInput {
   mixin(ViewComponentThis!("CTLPasswordFormInput", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

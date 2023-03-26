@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLValidUntilFormInput : DDateFormInput {
   mixin(ViewComponentThis!("CTLValidUntilFormInput", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
