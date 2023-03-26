@@ -27,7 +27,7 @@ class DSYSFormInputHandler : DFormInputHandler {
         "description": APPDescriptionFormGroup]); * /
   } 
   
-  /* override DH5Obj[] group(DOOPEntity entity, string field, bool readonly, STRINGAA options = null) {
+  /* override DH5Obj[] group(DEntity entity, string field, bool readonly, STRINGAA options = null) {
     if (form) {
       this.crudMode(form.crudMode);
 

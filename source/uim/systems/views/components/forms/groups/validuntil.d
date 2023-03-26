@@ -3,8 +3,8 @@ module uim.systems.views.components.forms.groups.validuntil;
 @safe:
 import uim.systems;
 
-class DCTLValidUntilFormInput : DDateFormInput {
-  mixin(ViewComponentThis!("CTLValidUntilFormInput", true));
+/* class DCTLValidUntilFormInput : DDateFormInput {
+  mixin(ViewComponentThis!("CTLValidUntilFormInput"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -16,4 +16,4 @@ class DCTLValidUntilFormInput : DDateFormInput {
       .fieldName("validUntil");
   }
 }
-mixin(ViewComponentCalls!("CTLValidUntilFormInput", true));
+mixin(ViewComponentCalls!("CTLValidUntilFormInput")); */

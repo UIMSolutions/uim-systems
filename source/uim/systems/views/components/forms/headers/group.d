@@ -4,9 +4,9 @@ module uim.systems.views.components.forms.headers.group;
 import uim.systems;
 
 class DSystemGroupFormHeader : DFormHeader {
-  mixin(ViewComponentThis!("SystemGroupFormHeader", true));
+  mixin(ViewComponentThis!("SystemGroupFormHeader"));
 }
-mixin(ViewComponentCalls!("SystemGroupFormHeader", true));
+mixin(ViewComponentCalls!("SystemGroupFormHeader"));
 
 unittest {
   assert(SystemGroupFormHeader);
