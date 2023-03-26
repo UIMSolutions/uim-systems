@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.sites.index;
 import uim.systems;
 
 class DSystemSiteIndexPageController : DSystemEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemSiteIndexPageController"));
+  mixin(PageControllerThis!("SystemSiteIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

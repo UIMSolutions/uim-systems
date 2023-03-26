@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.sites.delete_;
 import uim.systems;
 
 class DSystemSiteDeletePageController : DSystemDeletePageController {
-  mixin(APPPageControllerThis!("SystemSiteDeletePageController"));
+  mixin(PageControllerThis!("SystemSiteDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

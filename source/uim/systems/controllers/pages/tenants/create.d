@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.tenants.create;
 import uim.systems;
 
 class DSystemTenantCreatePageController : DSystemCreatePageController {
-  mixin(APPPageControllerThis!("SystemTenantCreatePageController"));
+  mixin(PageControllerThis!("SystemTenantCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

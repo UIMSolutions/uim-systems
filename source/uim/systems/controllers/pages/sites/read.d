@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.sites.read;
 import uim.systems;
 
 class DSystemSiteReadPageController : DSystemReadPageController {
-  mixin(APPPageControllerThis!("SystemSiteReadPageController"));
+  mixin(PageControllerThis!("SystemSiteReadPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

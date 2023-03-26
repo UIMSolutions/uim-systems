@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.roles.update;
 import uim.systems;
 
 class DSystemRoleUpdatePageController : DSystemUpdatePageController {
-  mixin(APPPageControllerThis!("SystemRoleUpdatePageController"));
+  mixin(PageControllerThis!("SystemRoleUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
