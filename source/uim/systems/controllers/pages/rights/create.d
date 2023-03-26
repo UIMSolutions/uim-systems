@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.rights.create;
 import uim.systems;
 
 class DSystemRightCreatePageController : DSystemCreatePageController {
-  mixin(APPPageControllerThis!("SystemRightCreatePageController"));
+  mixin(PageControllerThis!("SystemRightCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

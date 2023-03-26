@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.passwords.index;
 import uim.systems;
 
 class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemPasswordIndexPageController"));
+  mixin(PageControllerThis!("SystemPasswordIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

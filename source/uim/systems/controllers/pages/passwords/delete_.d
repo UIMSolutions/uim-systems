@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.passwords.delete_;
 import uim.systems;
 
 class DSystemPasswordDeletePageController : DSystemDeletePageController {
-  mixin(APPPageControllerThis!("SystemPasswordDeletePageController"));
+  mixin(PageControllerThis!("SystemPasswordDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
