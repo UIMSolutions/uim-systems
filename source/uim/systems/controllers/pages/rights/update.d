@@ -7,7 +7,7 @@ class DSystemRightUpdatePageController : DSystemUpdatePageController {
   mixin(APPPageControllerThis!("SystemRightUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_rights")
