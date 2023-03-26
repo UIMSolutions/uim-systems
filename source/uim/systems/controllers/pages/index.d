@@ -18,7 +18,7 @@ class DSystemIndexPageController : DSystemEntityPageController {
     super.beforeResponse(options);
     if (hasError || "redirect" in options) { return; }
 
-    // CheckAppSessionHasSiteId(this).check(_request, _response, reqParameters);
+    // AppSessionHasSiteCheckId(this).check(_request, _response, reqParameters);
 
     if (auto appSession = getAppSession(options)) {      
       debug writeln(appSession.debugInfo);

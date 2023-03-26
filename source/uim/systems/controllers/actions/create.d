@@ -11,7 +11,7 @@ class DSystemCreateAction : DActionController {
 
     this
     .checks([
-      AppSessionHasSessionCheck, CheckAppSessionHasSite, // AppSession related checks
+      AppSessionHasSessionCheck, AppSessionHasSiteCheck, // AppSession related checks
       CheckDatabaseHasSystems]); // Database related checks
   }
 
