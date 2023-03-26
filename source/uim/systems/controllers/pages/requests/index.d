@@ -33,14 +33,14 @@ class DSystemRequestIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/requests")
-       .content(
-          EntitiesFormContent(frm))
+       .rootPath("/system/requests");
+/*         .content(
+          EntitiesFormContent(frm)) 
         .header(
           FormHeader(frm)
             .mainTitle("Requests")
             .subTitle("Requests anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

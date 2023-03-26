@@ -33,14 +33,14 @@ class DSystemRightIndexPageController : DSystemEntitiesPageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-       .rootPath("/system/rights")
-       .content(
+       .rootPath("/system/rights");
+/*        .content(
           EntitiesFormContent(myForm))
         .header(
           FormHeader(myForm)
             .mainTitle("Rechte")
             .subTitle("Rechte anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

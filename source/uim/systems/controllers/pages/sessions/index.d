@@ -33,14 +33,14 @@ class DSystemSessionIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/sessions")
-       .content(
-          EntitiesFormContent(frm))
+       .rootPath("/system/sessions");
+/*        .content(
+          EntitiesFormContent(frm)) 
         .header(
           FormHeader(frm)
             .mainTitle("Sessions")
             .subTitle("Sessions anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

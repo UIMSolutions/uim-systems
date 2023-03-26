@@ -33,14 +33,14 @@ class DSystemTenantIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/tenants")
-       .content(
+       .rootPath("/system/tenants");
+/*        .content(
           EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
             .mainTitle("Anwender")
             .subTitle("Anwender anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

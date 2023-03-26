@@ -9,7 +9,7 @@ class DSYSFormInputHandler : DFormInputHandler {
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
-    this
+/*     this
       .formInputs([
         "active": CTLActiveFormGroup, 
         "valid": CTLValidDatesFormGroup, 
@@ -17,7 +17,7 @@ class DSYSFormInputHandler : DFormInputHandler {
         "validUntil": CTLValidUntilFormGroup, 
         "otp": CTLOtpFormGroup, 
         "password": CTLPasswordFormGroup 
-      ]);
+      ]); */
   } 
 
 /*     this

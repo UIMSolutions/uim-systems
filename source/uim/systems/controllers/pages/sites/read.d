@@ -32,9 +32,9 @@ class DSystemSiteReadPageController : DSystemReadPageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-         .method("post").action(this.rootPath~"/actions/read")
-        .content(
-          SystemSiteFormContent(myForm)); 
+         .method("post").action(this.rootPath~"/actions/read");
+/*         .content(
+          SystemSiteFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

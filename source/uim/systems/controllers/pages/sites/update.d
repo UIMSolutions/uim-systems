@@ -32,9 +32,9 @@ class DSystemSiteUpdatePageController : DSystemUpdatePageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-         .method("post").action(this.rootPath~"/actions/update")
-        .content(
-          SystemSiteFormContent(myForm)); 
+         .method("post").action(this.rootPath~"/actions/update");
+/*         .content(
+          SystemSiteFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

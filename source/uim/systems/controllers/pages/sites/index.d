@@ -33,14 +33,14 @@ class DSystemSiteIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/sites")
-       .content(
+       .rootPath("/system/sites");
+/*        .content(
           EntitiesFormContent(frm))
         .header(
           FormHeader(frm)
             .mainTitle("Sites")
             .subTitle("Sites anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }

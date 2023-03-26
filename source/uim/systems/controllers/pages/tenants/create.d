@@ -34,11 +34,11 @@ class DSystemTenantCreatePageController : DSystemCreatePageController {
       myForm
         .rootPath(this.rootPath)
         .method("post")
-        .action(this.rootPath~"/actions/create")
-        .content(
+        .action(this.rootPath~"/actions/create");
+/*         .content(
           SystemTenantFormContent(
             myForm
-        ));
+        )); */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader
