@@ -7,7 +7,7 @@ class DCTLOtpFormInput : DSwitchFormInput {
   mixin(ViewComponentThis!("CTLOtpFormInput", true));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .id("entity_otp")

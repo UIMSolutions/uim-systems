@@ -7,7 +7,7 @@ class DCTLPasswordFormInput : DFormInput {
   mixin(ViewComponentThis!("CTLPasswordFormInput", true));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .label("Passwort");
