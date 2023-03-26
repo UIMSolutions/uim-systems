@@ -7,7 +7,7 @@ class DSystemPasswordFormContent : DEntityFormContent {
   mixin(FormComponentThis!("SystemPasswordFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .crudMode(CRUDModes.Create)

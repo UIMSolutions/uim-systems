@@ -7,7 +7,7 @@ class DSystemTenantFormContent : DEntityFormContent {
   mixin(FormComponentThis!("SystemTenantFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .crudMode(CRUDModes.Create)

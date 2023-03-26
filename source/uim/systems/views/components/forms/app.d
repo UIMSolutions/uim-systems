@@ -7,7 +7,7 @@ class DCTLAppForm : DForm {
   mixin(ViewComponentThis!("CTLAppForm", true));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this.content(SystemAppFormContent);
   }
