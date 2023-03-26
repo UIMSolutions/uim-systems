@@ -7,7 +7,7 @@ class DCTLRoleForm : DForm {
   mixin(ViewComponentThis!("CTLRoleForm", true));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .content(SystemRoleFormContent);

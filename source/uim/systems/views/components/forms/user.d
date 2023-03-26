@@ -7,7 +7,7 @@ class DCTLUserForm : DForm {
   mixin(ViewComponentThis!("CTLUserForm", true));
 
   override void initialize(Json configSettings = Json(null)) { 
-    super.initialize; 
+    super.initialize(configSettings); 
     
     this
     .content(SystemUserFormContent);

@@ -7,7 +7,7 @@ class DCTLPasswordForm : DForm {
   mixin(ViewComponentThis!("CTLPasswordForm", true));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .content(SystemPasswordFormContent);
