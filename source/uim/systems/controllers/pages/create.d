@@ -17,7 +17,7 @@ class DSystemCreatePageController : DSystemEntityPageController {
       auto dbEntity = collection.createFromTemplate;      
       debug writeln(dbEntity ? "Has entity" : "no entity :-(");
 
-      if (auto entityView = cast(DAPPEntityCRUDView)this.view) {
+      if (auto entityView = cast(DEntityCRUDView)this.view) {
         debug writeln("Has entityView");
 
         with(entityView) {

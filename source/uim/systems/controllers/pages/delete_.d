@@ -13,7 +13,7 @@ class DSystemDeletePageController : DSystemEntityPageController {
 
     if (entityId && entityId.isUUID) {  
       auto dbEntity = collection.findOne(UUID(entityId));      
-      if (auto entityView = cast(DAPPEntityCRUDView)this.view) {
+      if (auto entityView = cast(DEntityCRUDView)this.view) {
         entityView
           .entity(dbEntity)
           .crudMode(CRUDModes.Delete)

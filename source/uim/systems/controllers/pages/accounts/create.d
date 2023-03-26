@@ -36,7 +36,7 @@ class DSystemAccountCreatePageController : DSystemCreatePageController {
         .method("post")
         .action(this.rootPath~"/actions/create")
         .content(
-          SystemAccountFormContent(myForm));
+          /* SystemAccountFormContent(myForm) */);
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

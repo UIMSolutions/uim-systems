@@ -36,9 +36,9 @@ class DSystemAppCreatePageController : DSystemCreatePageController {
         .method("post")
         .action(this.rootPath~"/actions/create")
         .content(
-          SystemAppFormContent(
+          /* SystemAppFormContent(
             myForm
-        ));
+        ) */);
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

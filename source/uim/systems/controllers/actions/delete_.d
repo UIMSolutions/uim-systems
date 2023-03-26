@@ -20,11 +20,11 @@ class DSystemDeleteAction : DActionController {
     super.beforeResponse(options);
     if (hasError || "redirect" in options) { return; }    
 
-    if (auto entity = collection.createFromTemplate) {             
-      database[appSession.site, collectionName]
+     if (auto entity = collection.createFromTemplate) {             
+ /*     database[appSession.site, collectionName]
         .removeOne(
           entity
-            .fromRequest(options));
+            .fromRequest(options)); */
 
       options["redirect"] = rootPath;
     }
