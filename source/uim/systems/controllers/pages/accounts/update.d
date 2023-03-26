@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.accounts.update;
 import uim.systems;
 
 class DSystemAccountUpdatePageController : DSystemUpdatePageController {
-  mixin(APPPageControllerThis!("SystemAccountUpdatePageController"));
+  mixin(PageControllerThis!("SystemAccountUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

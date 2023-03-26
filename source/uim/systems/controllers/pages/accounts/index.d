@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.accounts.index;
 import uim.systems;
 
 class DSystemAccountIndexPageController : DSystemEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemAccountIndexPageController"));
+  mixin(PageControllerThis!("SystemAccountIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

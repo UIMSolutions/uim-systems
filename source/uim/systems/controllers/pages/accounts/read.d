@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.accounts.read;
 import uim.systems;
 
 class DSystemAccountReadPageController : DSystemReadPageController {
-  mixin(APPPageControllerThis!("SystemAccountReadPageController"));
+  mixin(PageControllerThis!("SystemAccountReadPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
