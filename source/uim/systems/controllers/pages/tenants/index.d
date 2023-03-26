@@ -16,7 +16,7 @@ class DSystemTenantIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/tenants")
       .collectionName("system_tenants");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,7 +29,7 @@ class DSystemTenantIndexPageController : DSystemEntitiesPageController {
         .breadcrumbs(bc)
         .title(titleView("Übersicht UsAnwenderers"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto frm = cast(DForm)myView.form) {
       frm
