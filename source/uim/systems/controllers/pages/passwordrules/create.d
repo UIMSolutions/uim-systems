@@ -7,7 +7,7 @@ class DSystemPasswordRuleCreatePageController : DSystemCreatePageController {
   mixin(APPPageControllerThis!("SystemPasswordRuleCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_passwordrules")

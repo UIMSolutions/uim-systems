@@ -7,7 +7,7 @@ class DSystemPasswordRuleIndexPageController : DSystemEntitiesPageController {
   mixin(APPPageControllerThis!("SystemPasswordRuleIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     auto myView = APPEntitiesListView(this);
  
