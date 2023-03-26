@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLActiveFormInput : DSwitchFormInput {
   mixin(ViewComponentThis!("CTLActiveFormInput", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

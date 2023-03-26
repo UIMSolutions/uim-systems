@@ -6,7 +6,7 @@ import uim.systems;
 class DSYSFormInputHandler : DFormInputHandler {
   mixin(ViewComponentThis!("SYSFormInputHandler", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

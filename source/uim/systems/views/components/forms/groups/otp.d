@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLOtpFormInput : DSwitchFormInput {
   mixin(ViewComponentThis!("CTLOtpFormInput", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

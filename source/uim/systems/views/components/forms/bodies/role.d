@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemRoleFormContent : DEntityFormContent {
   mixin(FormComponentThis!("SystemRoleFormContent", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
