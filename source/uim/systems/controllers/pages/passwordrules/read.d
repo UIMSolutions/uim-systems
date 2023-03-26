@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.passwordrules.read;
 import uim.systems;
 
 class DSystemPasswordRuleReadPageController : DSystemReadPageController {
-  mixin(APPPageControllerThis!("SystemPasswordRuleReadPageController"));
+  mixin(PageControllerThis!("SystemPasswordRuleReadPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.passwords.create;
 import uim.systems;
 
 class DSystemPasswordCreatePageController : DSystemCreatePageController {
-  mixin(APPPageControllerThis!("SystemPasswordCreatePageController"));
+  mixin(PageControllerThis!("SystemPasswordCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

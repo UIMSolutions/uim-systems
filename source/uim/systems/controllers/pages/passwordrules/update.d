@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.passwordrules.update;
 import uim.systems;
 
 class DSystemPasswordRuleUpdatePageController : DSystemUpdatePageController {
-  mixin(APPPageControllerThis!("SystemPasswordRuleUpdatePageController"));
+  mixin(PageControllerThis!("SystemPasswordRuleUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
