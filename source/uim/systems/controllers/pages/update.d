@@ -43,7 +43,7 @@ auto mdlUpdatePageController(string classesName, string rootController, string a
     class D`~classesName~`UpdatePageController : D`~rootController~`PageController {
       `~appPageControllerThis(classesName~`UpdatePageController`, true)~`
 
-    override void initialize() {
+    override void initialize(Json configSettings = Json(null)) {
       super.initialize;
 
       this

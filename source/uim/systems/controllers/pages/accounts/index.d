@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemAccountIndexPageController : DSystemEntitiesPageController {
   mixin(APPPageControllerThis!("SystemAccountIndexPageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     auto myView = APPEntitiesListView(this);
