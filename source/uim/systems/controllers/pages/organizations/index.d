@@ -16,7 +16,7 @@ class DSystemOrganizationIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/organizations")
       .collectionName("system_organizations");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,9 +29,9 @@ class DSystemOrganizationIndexPageController : DSystemEntitiesPageController {
         .breadcrumbs(bc)
         .title(titleView("Übersicht Organizations"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
-    if (auto frm = cast(DForm)myView.form) {
+/*     if (auto frm = cast(DForm)myView.form) {
       frm
        .rootPath("/system/organizations")
        .content(
@@ -41,7 +41,7 @@ class DSystemOrganizationIndexPageController : DSystemEntitiesPageController {
             .mainTitle("Organizations")
             .subTitle("Organizations anzeigen")
             .actions([["print", "export"]]));
-    } 
+    }  */
   }
 }
 mixin(PageControllerCalls!("SystemOrganizationIndexPageController"));

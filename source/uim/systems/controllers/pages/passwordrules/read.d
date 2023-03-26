@@ -16,7 +16,7 @@ class DSystemPasswordRuleReadPageController : DSystemReadPageController {
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+   /*  if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .breadcrumbs(
           BS5Breadcrumb(
@@ -27,7 +27,7 @@ class DSystemPasswordRuleReadPageController : DSystemReadPageController {
               .item(["active", "fw-bold"], "Anzeigen")
         ))
         .title(titleCreate("Passwortregel anzeigen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm

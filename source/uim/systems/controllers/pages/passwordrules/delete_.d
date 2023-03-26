@@ -16,7 +16,7 @@ class DSystemPasswordRuleDeletePageController : DSystemDeletePageController {
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .breadcrumbs(
           BS5Breadcrumb(
@@ -27,13 +27,13 @@ class DSystemPasswordRuleDeletePageController : DSystemDeletePageController {
               .item(["active", "fw-bold"], "Löschen")
         ))
         .title(titleDelete("Passwortregel löschen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-        .method("post").action(this.rootPath~"/actions/delete")
-        .content(
-          SystemPasswordRuleFormContent(myForm)); 
+        .method("post").action(this.rootPath~"/actions/delete");
+/*         .content(
+          SystemPasswordRuleFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

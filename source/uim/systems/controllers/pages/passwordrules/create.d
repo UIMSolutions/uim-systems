@@ -16,7 +16,7 @@ class DSystemPasswordRuleCreatePageController : DSystemCreatePageController {
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);
     
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .rootPath(this.rootPath)
         .title(titleCreate("Passwortregel erstellen"))
@@ -28,14 +28,14 @@ class DSystemPasswordRuleCreatePageController : DSystemCreatePageController {
               .link(["href":this.rootPath], "Passwortregeln")
               .item(["active", "fw-bold"], "Erstellen")
           ));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
         .rootPath(this.rootPath)
         .method("post")
-        .action(this.rootPath~"/actions/create")
-        .content(SystemPasswordRuleFormContent(myForm));
+        .action(this.rootPath~"/actions/create");
+        /* .content(SystemPasswordRuleFormContent(myForm)); */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

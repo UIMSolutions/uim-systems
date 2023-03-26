@@ -16,7 +16,7 @@ class DSystemOrganizationDeletePageController : DSystemDeletePageController {
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+    /* if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -28,13 +28,13 @@ class DSystemOrganizationDeletePageController : DSystemDeletePageController {
       myHeader
         .breadcrumbs(bc)
         .title(titleDelete("Organization löschen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-        .method("post").action(this.rootPath~"/actions/delete")
-        .content(
-          SystemOrganizationFormContent(myForm)); 
+        .method("post").action(this.rootPath~"/actions/delete");
+/*         .content(
+          SystemOrganizationFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

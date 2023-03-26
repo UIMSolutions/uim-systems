@@ -16,7 +16,7 @@ class DSystemPasswordRuleIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/passwordrules")
       .collectionName("system_passwordrules");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+   /*  if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .rootPath("/system/passwordrules")
         .breadcrumbs(
@@ -28,7 +28,7 @@ class DSystemPasswordRuleIndexPageController : DSystemEntitiesPageController {
         ))
         .title(titleView("Übersicht Passwortregeln"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto frm = cast(DForm)myView.form) {
       frm
