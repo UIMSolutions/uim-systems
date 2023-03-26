@@ -16,7 +16,7 @@ class DSystemRoleDeletePageController : DSystemDeletePageController {
     auto myView = APPEntityDeleteView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       myHeader
         .breadcrumbs(
           BS5Breadcrumb(
@@ -27,7 +27,7 @@ class DSystemRoleDeletePageController : DSystemDeletePageController {
               .item(["active", "fw-bold"], "Löschen")
         ))
         .title(titleDelete("Rolle löschen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm

@@ -16,7 +16,7 @@ class DSystemRoleReadPageController : DSystemReadPageController {
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -28,7 +28,7 @@ class DSystemRoleReadPageController : DSystemReadPageController {
       myHeader
         .breadcrumbs(bc)
         .title(titleCreate("Role anzeigen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
