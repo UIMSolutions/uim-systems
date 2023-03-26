@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.logins.index;
 import uim.systems;
 
 class DSystemLoginIndexPageController : DSystemEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemLoginIndexPageController"));
+  mixin(PageControllerThis!("SystemLoginIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

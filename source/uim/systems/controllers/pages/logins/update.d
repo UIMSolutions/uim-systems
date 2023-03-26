@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.logins.update;
 import uim.systems;
 
 class DSystemLoginUpdatePageController : DSystemUpdatePageController {
-  mixin(APPPageControllerThis!("SystemLoginUpdatePageController"));
+  mixin(PageControllerThis!("SystemLoginUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

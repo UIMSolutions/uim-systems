@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.logins.create;
 import uim.systems;
 
 class DSystemLoginCreatePageController : DSystemCreatePageController {
-  mixin(APPPageControllerThis!("SystemLoginCreatePageController"));
+  mixin(PageControllerThis!("SystemLoginCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

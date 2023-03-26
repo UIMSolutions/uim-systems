@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.logins.delete_;
 import uim.systems;
 
 class DSystemLoginDeletePageController : DSystemDeletePageController {
-  mixin(APPPageControllerThis!("SystemLoginDeletePageController"));
+  mixin(PageControllerThis!("SystemLoginDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
