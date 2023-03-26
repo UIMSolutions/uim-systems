@@ -7,7 +7,7 @@ class DSystemSiteUpdatePageController : DSystemUpdatePageController {
   mixin(APPPageControllerThis!("SystemSiteUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_sites")

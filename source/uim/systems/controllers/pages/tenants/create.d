@@ -7,7 +7,7 @@ class DSystemTenantCreatePageController : DSystemCreatePageController {
   mixin(APPPageControllerThis!("SystemTenantCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_tenants")

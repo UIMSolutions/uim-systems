@@ -7,7 +7,7 @@ class DSystemSessionDeletePageController : DSystemDeletePageController {
   mixin(APPPageControllerThis!("SystemSessionDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_sessions")
