@@ -58,7 +58,7 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemAccountUpdatePageController"));
+mixin(PageControllerCalls!("SystemAccountUpdatePageController"));
 
 version(test_uim_systems) {
   unittest {

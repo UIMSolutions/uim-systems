@@ -43,7 +43,7 @@ class DSystemAccountIndexPageController : DSystemEntitiesPageController {
     } 
   }
 }
-mixin(APPPageControllerCalls!("SystemAccountIndexPageController"));
+mixin(PageControllerCalls!("SystemAccountIndexPageController"));
 
 version(test_uim_systems) {
   unittest {

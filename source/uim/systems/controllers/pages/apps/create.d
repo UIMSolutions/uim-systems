@@ -65,7 +65,7 @@ class DSystemAppCreatePageController : DSystemCreatePageController {
       .view(myView);      
   }
 }
-mixin(APPPageControllerCalls!("SystemAppCreatePageController"));
+mixin(PageControllerCalls!("SystemAppCreatePageController"));
 
 version(test_uim_systems) {
   unittest {
