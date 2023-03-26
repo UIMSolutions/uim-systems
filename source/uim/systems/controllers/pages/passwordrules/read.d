@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemPasswordRuleReadPageController : DSystemReadPageController {
   mixin(APPPageControllerThis!("SystemPasswordRuleReadPageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

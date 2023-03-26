@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemPasswordRuleDeletePageController : DSystemDeletePageController {
   mixin(APPPageControllerThis!("SystemPasswordRuleDeletePageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

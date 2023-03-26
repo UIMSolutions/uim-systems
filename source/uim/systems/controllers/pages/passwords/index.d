@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
   mixin(APPPageControllerThis!("SystemPasswordIndexPageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     auto myView = APPEntitiesListView(this);
