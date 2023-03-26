@@ -47,7 +47,7 @@ auto mdlReadPageController(string classesName, string rootController, string add
       `~appPageControllerThis(classesName~`ReadPageController`, true)~`
 
     override void initialize(Json configSettings = Json(null)) {
-      super.initialize;
+      super.initialize(configSettings);
 
       this
         .view(

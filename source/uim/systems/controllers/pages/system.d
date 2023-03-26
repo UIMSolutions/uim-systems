@@ -7,7 +7,7 @@ class DSystemModellerPageController : DSystemEntityPageController {
   mixin(APPPageControllerThis!("SystemModellerPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
   }
 
   override void beforeResponse(STRINGAA options = null) {

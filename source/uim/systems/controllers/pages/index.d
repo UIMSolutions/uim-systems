@@ -7,7 +7,7 @@ class DSystemIndexPageController : DSystemEntityPageController {
   mixin(APPPageControllerThis!("SystemIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .checks([APPCheckAppSessionHasSession]);

@@ -10,7 +10,7 @@ class DSystemEntityPageController : DAPPEntityPageController {
   mixin(OProperty!("string", "entityId"));
   
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .addChecks([

@@ -40,7 +40,7 @@ auto mdlDeletePageController(string classesName, string rootController, string a
       `~appPageControllerThis(classesName~`DeletePageController`, true)~`
 
     override void initialize(Json configSettings = Json(null)) {
-      super.initialize;
+      super.initialize(configSettings);
 
       this
         .view(

@@ -9,7 +9,7 @@ class DSystemEntitiesPageController : DAPPEntitiesPageController {
   mixin(OProperty!("string", "rootPath"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
     .addChecks([
