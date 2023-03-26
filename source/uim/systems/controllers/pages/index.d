@@ -10,7 +10,7 @@ class DSystemIndexPageController : DSystemEntityPageController {
     super.initialize(configSettings);
 
     this
-      .checks([APPCheckAppSessionHasSession]);
+      .checks([CheckAppSessionHasSession]);
   }
 
   override void beforeResponse(STRINGAA options = null) {
@@ -18,7 +18,7 @@ class DSystemIndexPageController : DSystemEntityPageController {
     super.beforeResponse(options);
     if (hasError || "redirect" in options) { return; }
 
-    // APPCheckAppSessionHasSiteId(this).check(_request, _response, reqParameters);
+    // CheckAppSessionHasSiteId(this).check(_request, _response, reqParameters);
 
     if (auto appSession = getAppSession(options)) {      
       debug writeln(appSession.debugInfo);

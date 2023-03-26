@@ -11,8 +11,8 @@ class DSystemUpdateAction : DActionController {
 
     this
     .checks([
-      APPCheckAppSessionHasSession, APPCheckAppSessionHasSite, // AppSession related checks
-      APPCheckDatabaseHasSystems]); // Database related checks
+      CheckAppSessionHasSession, CheckAppSessionHasSite, // AppSession related checks
+      CheckDatabaseHasSystems]); // Database related checks
   }
 
   override void beforeResponse(STRINGAA options = null) {

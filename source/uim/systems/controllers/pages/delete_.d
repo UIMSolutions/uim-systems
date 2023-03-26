@@ -62,7 +62,7 @@ template SystemDeletePageController(string classesName, string rootController, s
     this
     .jsPath(jsPath).pgPath(myPath).entitiesName(myEntities).entityName(myEntity).collectionName(myCollectionName)
     .title("UIM!System > "~myEntities~" > Löschen")
-    .checks([APPCheckAppSessionExists, APPCheckAppSessionHasSession, APPCheckAppSessionHasSite])
+    .checks([CheckAppSessionExists, CheckAppSessionHasSession, CheckAppSessionHasSite])
     .pageHeader(
       APPDeletePageHeader
       .rootPath(pgPath).mainTitle(myEntities).subTitle("Löschen "~myEntity)
