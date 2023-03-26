@@ -56,7 +56,7 @@ class DSystemPasswordReadPageController : DSystemReadPageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemPasswordReadPageController"));
+mixin(PageControllerCalls!("SystemPasswordReadPageController"));
 
 version(test_uim_systems) {
   unittest {

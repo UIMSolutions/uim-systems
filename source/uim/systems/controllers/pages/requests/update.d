@@ -59,7 +59,7 @@ class DSystemRequestUpdatePageController : DSystemUpdatePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemRequestUpdatePageController"));
+mixin(PageControllerCalls!("SystemRequestUpdatePageController"));
 
 version(test_uim_systems) {
   unittest {

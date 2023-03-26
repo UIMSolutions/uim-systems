@@ -56,7 +56,7 @@ class DSystemRequestDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemRequestDeletePageController"));
+mixin(PageControllerCalls!("SystemRequestDeletePageController"));
 
 version(test_uim_systems) {
   unittest {

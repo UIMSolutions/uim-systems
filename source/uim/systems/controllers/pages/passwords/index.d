@@ -44,7 +44,7 @@ class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
     } 
   }
 }
-mixin(APPPageControllerCalls!("SystemPasswordIndexPageController"));
+mixin(PageControllerCalls!("SystemPasswordIndexPageController"));
 
 version(test_uim_systems) {
   unittest {

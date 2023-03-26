@@ -56,7 +56,7 @@ class DSystemRequestReadPageController : DSystemReadPageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemRequestReadPageController"));
+mixin(PageControllerCalls!("SystemRequestReadPageController"));
 
 version(test_uim_systems) {
   unittest {
