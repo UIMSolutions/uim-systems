@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.update;
 import uim.systems;
 
 class DSystemUpdatePageController : DSystemEntityPageController {
-  mixin(APPPageControllerThis!("SystemUpdatePageController"));
+  mixin(PageControllerThis!("SystemUpdatePageController"));
 
   override void beforeResponse(STRINGAA options = null) {
     debugMethodCall(moduleName!DSystemUpdatePageController~":DSystemUpdatePageController("~this.name~")::beforeResponse");

@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.list;
 import uim.systems;
 
 class DSystemListPageController : DAPPListPage {
-  mixin(APPPageControllerThis!("SystemListPageController"));
+  mixin(PageControllerThis!("SystemListPageController"));
   
   this(string jsPath, string myPath, string myEntities, string myEntity, string myCollectionName) { 
     super(); 

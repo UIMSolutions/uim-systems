@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.read;
 import uim.systems;
 
 class DSystemReadPageController : DSystemEntityPageController {
-  mixin(APPPageControllerThis!("SystemReadPageController"));
+  mixin(PageControllerThis!("SystemReadPageController"));
   
   override void beforeResponse(STRINGAA options = null) {
     debugMethodCall(moduleName!DSystemReadPageController~":DSystemReadPageController::beforeResponse");

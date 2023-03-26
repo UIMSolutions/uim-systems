@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.accounts.create;
 import uim.systems;
 
 class DSystemAccountCreatePageController : DSystemCreatePageController {
-  mixin(APPPageControllerThis!("SystemAccountCreatePageController"));
+  mixin(PageControllerThis!("SystemAccountCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

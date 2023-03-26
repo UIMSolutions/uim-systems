@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.create;
 import uim.systems;
 
 class DSystemCreatePageController : DSystemEntityPageController {
-  mixin(APPPageControllerThis!("SystemCreatePageController"));
+  mixin(PageControllerThis!("SystemCreatePageController"));
 
   override void beforeResponse(STRINGAA options = null) {
     debugMethodCall(moduleName!DSystemCreatePageController~":DSystemCreatePageController("~this.name~")::beforeResponse");

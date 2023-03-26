@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.delete_;
 import uim.systems;
 
 class DSystemDeletePageController : DSystemEntityPageController {
-  mixin(APPPageControllerThis!("SystemDeletePageController"));
+  mixin(PageControllerThis!("SystemDeletePageController"));
 
   override void beforeResponse(STRINGAA options = null) {
     debugMethodCall(moduleName!DSystemDeletePageController~":DSystemDeletePageController("~this.name~")::beforeResponse");

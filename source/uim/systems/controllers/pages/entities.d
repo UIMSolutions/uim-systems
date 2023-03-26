@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.entities;
 import uim.systems;
 
 class DSystemEntitiesPageController : DAPPEntitiesPageController {
-  mixin(APPPageControllerThis!("SystemEntitiesPageController"));
+  mixin(PageControllerThis!("SystemEntitiesPageController"));
 
   mixin(OProperty!("string", "rootPath"));
 

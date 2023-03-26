@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.system;
 import uim.systems;
 
 class DSystemModellerPageController : DSystemEntityPageController {
-  mixin(APPPageControllerThis!("SystemModellerPageController"));
+  mixin(PageControllerThis!("SystemModellerPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
