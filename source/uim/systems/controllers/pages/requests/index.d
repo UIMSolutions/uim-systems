@@ -7,7 +7,7 @@ class DSystemRequestIndexPageController : DSystemEntitiesPageController {
   mixin(APPPageControllerThis!("SystemRequestIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     auto myView = APPEntitiesListView(this);
  

@@ -7,7 +7,7 @@ class DSystemRequestDeletePageController : DSystemDeletePageController {
   mixin(APPPageControllerThis!("SystemRequestDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_requests")
