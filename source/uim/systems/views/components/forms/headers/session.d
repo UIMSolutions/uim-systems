@@ -4,9 +4,9 @@ module uim.systems.views.components.forms.headers.session;
 import uim.systems;
 
 class DSystemSessionFormHeader : DFormHeader {
-  mixin(ViewComponentThis!("SystemSessionFormHeader", true));
+  mixin(ViewComponentThis!("SystemSessionFormHeader"));
 }
-mixin(ViewComponentCalls!("SystemSessionFormHeader", true));
+mixin(ViewComponentCalls!("SystemSessionFormHeader"));
 
 unittest {
   assert(SystemSessionFormHeader);

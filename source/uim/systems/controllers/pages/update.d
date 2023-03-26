@@ -65,7 +65,7 @@ template SystemUpdatePageController(string classesName, string rootController, s
     this
     .jsPath(jsPath).pgPath(myPath).entitiesName(myEntities).entityName(myEntity).collectionName(myCollectionName)
     .title("UIM!System > "~myEntities~" > Bearbeiten")
-    .checks([APPCheckAppSessionExists, APPCheckAppSessionHasSession, APPCheckAppSessionHasSite])
+    .checks([CheckAppSessionExists, CheckAppSessionHasSession, CheckAppSessionHasSite])
     // .securityController(APPSecurityController(this))
     .pageHeader(
       APPEditPageHeader

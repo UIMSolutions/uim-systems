@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.site;
 import uim.systems;
 
 class DCTLSiteForm : DForm {
-  mixin(ViewComponentThis!("CTLSiteForm", true));
+  mixin(ViewComponentThis!("CTLSiteForm"));
 
   override void initialize(Json configSettings = Json(null)) { 
     super.initialize(configSettings); 
@@ -13,7 +13,7 @@ class DCTLSiteForm : DForm {
     .content(SystemSiteFormContent);
   }
 }
-mixin(ViewComponentCalls!("CTLSiteForm", true));
+mixin(ViewComponentCalls!("CTLSiteForm"));
 
 version(uim_systems) {
   unittest {
