@@ -4,7 +4,7 @@ module uim.systems.controllers.pages.tenants.update;
 import uim.systems;
 
 class DSystemTenantUpdatePageController : DSystemUpdatePageController {
-  mixin(APPPageControllerThis!("SystemTenantUpdatePageController"));
+  mixin(PageControllerThis!("SystemTenantUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
