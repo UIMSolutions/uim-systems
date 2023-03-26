@@ -32,9 +32,9 @@ class DSystemRightDeletePageController : DSystemDeletePageController {
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
-        .method("post").action(this.rootPath~"/actions/delete")
-        .content(
-          SystemRightFormContent(myForm)); 
+        .method("post").action(this.rootPath~"/actions/delete");
+/*         .content(
+          SystemRightFormContent(myForm));  */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) { 
         myFormHeader

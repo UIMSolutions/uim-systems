@@ -34,8 +34,8 @@ class DSystemRoleIndexPageController : DSystemEntitiesPageController {
     if (auto frm = cast(DForm)myView.form) {
       frm
        .rootPath("/system/roles")
-       .content(
-          EntitiesFormContent(frm))
+/*        .content(
+          EntitiesFormContent(frm)) */
         .header(
           FormHeader(frm)
             .mainTitle("Rollen")

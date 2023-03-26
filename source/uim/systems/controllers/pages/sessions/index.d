@@ -16,7 +16,7 @@ class DSystemSessionIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/sessions")
       .collectionName("system_sessions");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,7 +29,7 @@ class DSystemSessionIndexPageController : DSystemEntitiesPageController {
         .breadcrumbs(bc)
         .title(titleView("Übersicht Sessions"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto frm = cast(DForm)myView.form) {
       frm
