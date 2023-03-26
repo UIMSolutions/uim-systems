@@ -7,7 +7,7 @@ class DSystemAppCreatePageController : DSystemCreatePageController {
   mixin(APPPageControllerThis!("SystemAppCreatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_apps")

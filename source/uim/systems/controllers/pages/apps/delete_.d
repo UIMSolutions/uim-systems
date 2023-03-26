@@ -7,7 +7,7 @@ class DSystemAppDeletePageController : DSystemDeletePageController {
   mixin(APPPageControllerThis!("SystemAppDeletePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_apps")

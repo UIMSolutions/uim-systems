@@ -7,7 +7,7 @@ class DSystemAccountUpdatePageController : DSystemUpdatePageController {
   mixin(APPPageControllerThis!("SystemAccountUpdatePageController"));
 
   override void initialize(Json configSettings = Json(null)) {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .collectionName("system_accounts")
