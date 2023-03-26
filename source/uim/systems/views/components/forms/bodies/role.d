@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.role;
 import uim.systems;
 
 class DSystemRoleFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemRoleFormContent", true));
+  mixin(ViewComponentThis!("SystemRoleFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

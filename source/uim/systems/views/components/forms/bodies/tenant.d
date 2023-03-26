@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.tenant;
 import uim.systems;
 
 class DSystemTenantFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemTenantFormContent", true));
+  mixin(ViewComponentThis!("SystemTenantFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

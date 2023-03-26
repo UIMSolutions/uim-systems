@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.app;
 import uim.systems;
 
 class DSystemAppFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemAppFormHeader", true));
+  mixin(ViewComponentThis!("SystemAppFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemAppFormHeader", true));
 

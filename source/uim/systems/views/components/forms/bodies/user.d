@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.user;
 import uim.systems;
 
 class DSystemUserFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemUserFormContent", true));
+  mixin(ViewComponentThis!("SystemUserFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

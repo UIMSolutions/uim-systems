@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.account;
 import uim.systems;
 
 class DSystemAccountFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemAccountFormHeader", true));
+  mixin(ViewComponentThis!("SystemAccountFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemAccountFormHeader", true));
 
