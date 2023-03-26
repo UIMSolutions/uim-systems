@@ -4,9 +4,9 @@ module uim.systems.views.components.forms.headers.site;
 import uim.systems;
 
 class DSystemSiteFormHeader : DFormHeader {
-  mixin(ViewComponentThis!("SystemSiteFormHeader", true));
+  mixin(ViewComponentThis!("SystemSiteFormHeader"));
 }
-mixin(ViewComponentCalls!("SystemSiteFormHeader", true));
+mixin(ViewComponentCalls!("SystemSiteFormHeader"));
 
 unittest {
   assert(SystemSiteFormHeader);

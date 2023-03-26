@@ -4,9 +4,9 @@ module uim.systems.views.components.forms.headers.password;
 import uim.systems;
 
 class DSystemPasswordFormHeader : DFormHeader {
-  mixin(ViewComponentThis!("SystemPasswordFormHeader", true));
+  mixin(ViewComponentThis!("SystemPasswordFormHeader"));
 }
-mixin(ViewComponentCalls!("SystemPasswordFormHeader", true));
+mixin(ViewComponentCalls!("SystemPasswordFormHeader"));
 
 version(uim_systems) {
   unittest {

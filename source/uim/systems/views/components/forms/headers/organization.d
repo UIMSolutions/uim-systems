@@ -4,9 +4,9 @@ module uim.systems.views.components.forms.headers.organization;
 import uim.systems;
 
 class DSystemOrganizationFormHeader : DFormHeader {
-  mixin(ViewComponentThis!("SystemOrganizationFormHeader", true));
+  mixin(ViewComponentThis!("SystemOrganizationFormHeader"));
 }
-mixin(ViewComponentCalls!("SystemOrganizationFormHeader", true));
+mixin(ViewComponentCalls!("SystemOrganizationFormHeader"));
 
 unittest {
   assert(SystemOrganizationFormHeader);

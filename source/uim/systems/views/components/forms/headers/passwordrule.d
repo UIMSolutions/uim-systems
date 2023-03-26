@@ -4,9 +4,9 @@ module uim.systems.views.components.forms.headers.passwordrule;
 import uim.systems;
 
 class DSystemPasswordRuleFormHeader : DFormHeader {
-  mixin(ViewComponentThis!("SystemPasswordRuleFormHeader", true));
+  mixin(ViewComponentThis!("SystemPasswordRuleFormHeader"));
 }
-mixin(ViewComponentCalls!("SystemPasswordRuleFormHeader", true));
+mixin(ViewComponentCalls!("SystemPasswordRuleFormHeader"));
 
 unittest {
   assert(SystemPasswordRuleFormHeader);

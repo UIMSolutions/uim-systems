@@ -4,9 +4,9 @@ module uim.systems.views.components.forms.headers.role;
 import uim.systems;
 
 class DSystemRoleFormHeader : DFormHeader {
-  mixin(ViewComponentThis!("SystemRightFormHeader", true));
+  mixin(ViewComponentThis!("SystemRightFormHeader"));
 }
-mixin(ViewComponentCalls!("SystemRightFormHeader", true));
+mixin(ViewComponentCalls!("SystemRightFormHeader"));
 
 version(uim_systems) {
   unittest {
