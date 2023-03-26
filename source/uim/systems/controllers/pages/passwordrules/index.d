@@ -43,7 +43,7 @@ class DSystemPasswordRuleIndexPageController : DSystemEntitiesPageController {
     } 
   }
 }
-mixin(APPPageControllerCalls!("SystemPasswordRuleIndexPageController"));
+mixin(PageControllerCalls!("SystemPasswordRuleIndexPageController"));
 
 version(test_uim_systems) {
   unittest {

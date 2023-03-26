@@ -56,7 +56,7 @@ class DSystemOrganizationReadPageController : DSystemReadPageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemOrganizationReadPageController"));
+mixin(PageControllerCalls!("SystemOrganizationReadPageController"));
 
 version(test_uim_systems) {
   unittest {

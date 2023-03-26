@@ -62,7 +62,7 @@ class DSystemPasswordRuleCreatePageController : DSystemCreatePageController {
       .view(myView);      
   }
 }
-mixin(APPPageControllerCalls!("SystemPasswordRuleCreatePageController"));
+mixin(PageControllerCalls!("SystemPasswordRuleCreatePageController"));
 
 version(test_uim_systems) {
   unittest {

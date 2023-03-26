@@ -58,7 +58,7 @@ class DSystemPasswordRuleUpdatePageController : DSystemUpdatePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemPasswordRuleUpdatePageController"));
+mixin(PageControllerCalls!("SystemPasswordRuleUpdatePageController"));
 
 version(test_uim_systems) {
   unittest {

@@ -55,7 +55,7 @@ class DSystemPasswordRuleDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemPasswordRuleDeletePageController"));
+mixin(PageControllerCalls!("SystemPasswordRuleDeletePageController"));
 
 version(test_uim_systems) {
   unittest {
