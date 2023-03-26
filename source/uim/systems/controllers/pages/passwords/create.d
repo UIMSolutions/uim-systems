@@ -16,7 +16,7 @@ class DSystemPasswordCreatePageController : DSystemCreatePageController {
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);
     
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,15 +29,15 @@ class DSystemPasswordCreatePageController : DSystemCreatePageController {
         .rootPath(this.rootPath)
         .title(titleCreate("Passwort erstellen"))
         .breadcrumbs(bc);
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
-      myForm
+      /* myForm
         .rootPath(this.rootPath)
         .method("post")
         .action(this.rootPath~"/actions/create")
         .content(
-          SystemPasswordFormContent(myForm));
+          SystemPasswordFormContent(myForm)); */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader
@@ -45,7 +45,7 @@ class DSystemPasswordCreatePageController : DSystemCreatePageController {
             .mainTitle("Neues Passwort")
             .subTitle("Bitte Werte eingeben")
             .actions([["cancel", "save"]]);
-      }
+      } 
 
       this
         .scripts

@@ -15,7 +15,7 @@ class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
       .view(myView)
       .rootPath("/system/passwords")
       .collectionName("system_passwords");
-
+/* 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
@@ -29,7 +29,7 @@ class DSystemPasswordIndexPageController : DSystemEntitiesPageController {
         .breadcrumbs(bc)
         .title(titleView("Übersicht Passwords"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto frm = cast(DForm)myView.form) {
       frm
