@@ -33,14 +33,14 @@ class DSystemUserIndexPageController : DSystemEntitiesPageController {
 
     if (auto frm = cast(DForm)myView.form) {
       frm
-       .rootPath("/system/users")
-       .content(
-          EntitiesFormContent(frm))
+       .rootPath("/system/users");
+/*         .content(
+          EntitiesFormContent(frm)) 
         .header(
           FormHeader(frm)
             .mainTitle("Anwender")
             .subTitle("Anwender anzeigen")
-            .actions([["print", "export"]]));
+            .actions([["print", "export"]])); */
     } 
   }
 }
@@ -48,9 +48,7 @@ mixin(PageControllerCalls!("SystemUserIndexPageController"));
 
 version(test_uim_systems) {
   unittest {
-    writeln("--- Tests in ", __MODULE__, "/", __LINE__);
 		testPageController(new DSystemUserIndexPageController); 
 
-    writeln("--- Tests in ", __MODULE__, "/", __LINE__);
 		testPageController(SystemUserIndexPageController); 
 }}
