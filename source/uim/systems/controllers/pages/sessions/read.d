@@ -56,7 +56,7 @@ class DSystemSessionReadPageController : DSystemReadPageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemSessionReadPageController"));
+mixin(PageControllerCalls!("SystemSessionReadPageController"));
 
 version(test_uim_systems) {
   unittest {

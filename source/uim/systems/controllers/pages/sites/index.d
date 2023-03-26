@@ -44,7 +44,7 @@ class DSystemSiteIndexPageController : DSystemEntitiesPageController {
     } 
   }
 }
-mixin(APPPageControllerCalls!("SystemSiteIndexPageController"));
+mixin(PageControllerCalls!("SystemSiteIndexPageController"));
 
 version(test_uim_systems) {
   unittest {
