@@ -11,7 +11,7 @@ class DSystemDeleteAction : DActionController {
 
     this
     .checks([
-      CheckAppSessionHasSession, CheckAppSessionHasSite, // AppSession related checks
+      AppSessionHasSessionCheck, CheckAppSessionHasSite, // AppSession related checks
       CheckDatabaseHasSystems]); // Database related checks
   }
 

@@ -12,7 +12,7 @@ class DSystemListPageController : DAPPListPage {
     /* this
     .jsPath(jsPath).pgPath(myPath).entitiesName(myEntities).entityName(myEntity).collectionName(myCollectionName)
     .title("UIM!System > "~myEntities)
-    .checks([CheckAppSessionExists, CheckAppSessionHasSession, CheckAppSessionHasSite, CheckDatabaseExists])
+    .checks([CheckAppSessionExists, AppSessionHasSessionCheck, CheckAppSessionHasSite, CheckDatabaseExists])
     .pageHeader(
       PageHeader
       .rootPath(pgPath).preTitle(myEntities).title("Übersicht "~myEntities).actions(["refresh", "create"])

@@ -44,7 +44,7 @@ version(test_uim_modeller) {
     this
     .jsPath(jsPath).pgPath(myPath).entitiesName(myEntities).entityName(myEntity).collectionName(myCollectionName)
     .title("UIM!System > "~myEntities~" > Erstellen")
-    .checks([CheckAppSessionExists, CheckAppSessionHasSession, CheckAppSessionHasSite, CheckDatabaseExists])
+    .checks([CheckAppSessionExists, AppSessionHasSessionCheck, CheckAppSessionHasSite, CheckDatabaseExists])
     // .securityController(APPSecurityController(this))      
     .pageHeader(
       APPCreatePageHeader(pgPath, myEntities, myEntity).actions(["refresh", "list"])

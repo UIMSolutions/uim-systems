@@ -69,7 +69,7 @@ template SystemReadPageController(string classesName, string rootController, str
     this
     .jsPath(jsPath).pgPath(myPath).entitiesName(myEntities).entityName(myEntity).collectionName(myCollectionName)
     .title("UIM!System > "~myEntities~" > Anzeigen")
-    .checks([CheckAppSessionExists, CheckAppSessionHasSession, CheckAppSessionHasSite])
+    .checks([CheckAppSessionExists, AppSessionHasSessionCheck, CheckAppSessionHasSite])
     // .securityController(APPSecurityController(this))      
     .pageHeader(
       ViewPageHeader

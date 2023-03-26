@@ -13,7 +13,7 @@ class DSystemEntitiesPageController : DAPPEntitiesPageController {
 
     this
     .addChecks([
-      CheckAppSessionHasSession, CheckAppSessionHasSite, // Check appSesssion
+      AppSessionHasSessionCheck, CheckAppSessionHasSite, // Check appSesssion
       CheckDatabaseHasSessions, CheckDatabaseHasSites // Check database
     ]);
   }
