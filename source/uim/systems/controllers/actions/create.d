@@ -3,8 +3,8 @@ module uim.systems.controllers.actions.create;
 @safe:
 import uim.systems;
 
-class DSystemCreateAction : DAPPActionController {
-  mixin(APPControllerThis!("SystemCreateAction"));
+class DSystemCreateAction : DActionController {
+  mixin(ControllerThis!("SystemCreateAction"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -32,4 +32,4 @@ class DSystemCreateAction : DAPPActionController {
     }
 	}
 }
-mixin(APPControllerCalls!("SystemCreateAction"));
+mixin(ControllerCalls!("SystemCreateAction"));

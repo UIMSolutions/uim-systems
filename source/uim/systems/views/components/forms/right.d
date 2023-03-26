@@ -13,12 +13,12 @@ class DCTLRightForm : DForm {
     this
     .content(SystemRightFormContent);
   }
-  this(DAPPView myView) { this().view(myView); }
-  this(DOOPEntity myEntity) { this().entity(myEntity); }
-  this(DAPPView myView, DOOPEntity myEntity) { this(myView).entity(myEntity); }
+  this(DView myView) { this().view(myView); }
+  this(DEntity myEntity) { this().entity(myEntity); }
+  this(DView myView, DEntity myEntity) { this(myView).entity(myEntity); }
 }
 auto CTLRightForm() { return new DCTLRightForm; }
 auto CTLRightForm(string rootPath, CRUDModes crudMode = CRUDModes.Read) { return new DCTLRightForm(rootPath, crudMode); }
-auto CTLRightForm(DAPPView myView) { return new DCTLRightForm(myView); }
-auto CTLRightForm(DOOPEntity myEntity) { return new DCTLRightForm(myEntity); }
-auto CTLRightForm(DAPPView myView, DOOPEntity myEntity) { return new DCTLRightForm(myView, myEntity); }
+auto CTLRightForm(DView myView) { return new DCTLRightForm(myView); }
+auto CTLRightForm(DEntity myEntity) { return new DCTLRightForm(myEntity); }
+auto CTLRightForm(DView myView, DEntity myEntity) { return new DCTLRightForm(myView, myEntity); }

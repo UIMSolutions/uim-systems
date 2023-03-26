@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.organization;
 import uim.systems;
 
 class DCTLOrganizationForm : DForm {
-  mixin(ViewComponentThis!("CTLOrganizationForm", true));
+  mixin(ViewComponentThis!("CTLOrganizationForm"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -13,5 +13,5 @@ class DCTLOrganizationForm : DForm {
     .content(SystemOrganizationFormContent);
   }
 }
-mixin(ViewComponentCalls!("CTLOrganizationForm", true));
+mixin(ViewComponentCalls!("CTLOrganizationForm"));
 

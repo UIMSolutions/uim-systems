@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.user;
 import uim.systems;
 
 class DCTLUserForm : DForm {
-  mixin(ViewComponentThis!("CTLUserForm", true));
+  mixin(ViewComponentThis!("CTLUserForm"));
 
   override void initialize(Json configSettings = Json(null)) { 
     super.initialize(configSettings); 
@@ -13,9 +13,8 @@ class DCTLUserForm : DForm {
     .content(SystemUserFormContent);
   }
 }
-mixin(ViewComponentCalls!("CTLUserForm", true));
+mixin(ViewComponentCalls!("CTLUserForm"));
 
-version(uim_systems) {
-  unittest {
-    // TODO
+version(uim_systems) { unittest {
+  // TODO
 }}

@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.app;
 import uim.systems;
 
 class DCTLAppForm : DForm {
-  mixin(ViewComponentThis!("CTLAppForm", true));
+  mixin(ViewComponentThis!("CTLAppForm"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -12,7 +12,7 @@ class DCTLAppForm : DForm {
     this.content(SystemAppFormContent);
   }
 }
-mixin(ViewComponentCalls!("CTLAppForm", true));
+mixin(ViewComponentCalls!("CTLAppForm"));
 
 version(uim_systems) {
   unittest {

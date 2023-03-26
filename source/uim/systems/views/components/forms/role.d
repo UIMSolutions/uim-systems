@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.role;
 import uim.systems;
 
 class DCTLRoleForm : DForm {
-  mixin(ViewComponentThis!("CTLRoleForm", true));
+  mixin(ViewComponentThis!("CTLRoleForm"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -13,7 +13,7 @@ class DCTLRoleForm : DForm {
     .content(SystemRoleFormContent);
   }
 }
-mixin(ViewComponentCalls!("CTLRoleForm", true));
+mixin(ViewComponentCalls!("CTLRoleForm"));
 
 version(uim_systems) {
   unittest {

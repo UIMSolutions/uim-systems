@@ -13,12 +13,12 @@ class DCTLPasswordRuleForm : DForm {
     this
     .content(SystemPasswordRuleFormContent);
   }
-  this(DAPPView myView) { this().view(myView); }
-  this(DOOPEntity myEntity) { this().entity(myEntity); }
-  this(DAPPView myView, DOOPEntity myEntity) { this(myView).entity(myEntity); }
+  this(DView myView) { this().view(myView); }
+  this(DEntity myEntity) { this().entity(myEntity); }
+  this(DView myView, DEntity myEntity) { this(myView).entity(myEntity); }
 }
 auto CTLPasswordRuleForm() { return new DCTLPasswordRuleForm; }
 auto CTLPasswordRuleForm(CRUDModes crudMode, string rootPath) { return new DCTLPasswordRuleForm(rootPath, crudMode); }
-auto CTLPasswordRuleForm(DAPPView myView) { return new DCTLPasswordRuleForm(myView); }
-auto CTLPasswordRuleForm(DOOPEntity myEntity) { return new DCTLPasswordRuleForm(myEntity); }
-auto CTLPasswordRuleForm(DAPPView myView, DOOPEntity myEntity) { return new DCTLPasswordRuleForm(myView, myEntity); }
+auto CTLPasswordRuleForm(DView myView) { return new DCTLPasswordRuleForm(myView); }
+auto CTLPasswordRuleForm(DEntity myEntity) { return new DCTLPasswordRuleForm(myEntity); }
+auto CTLPasswordRuleForm(DView myView, DEntity myEntity) { return new DCTLPasswordRuleForm(myView, myEntity); }

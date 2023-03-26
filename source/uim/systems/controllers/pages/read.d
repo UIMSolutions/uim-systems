@@ -72,7 +72,7 @@ template SystemReadPageController(string classesName, string rootController, str
     .checks([APPCheckAppSessionExists, APPCheckAppSessionHasSession, APPCheckAppSessionHasSite])
     // .securityController(APPSecurityController(this))      
     .pageHeader(
-      APPViewPageHeader
+      ViewPageHeader
       .rootPath(pgPath).mainTitle(myEntities).subTitle("Anzeigen "~myEntity)
       .breadcrumbs(BS5BreadcrumbList(["breadcrumb-arrows"])
         .link(["href":"/"], "UIM!System")

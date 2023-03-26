@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.account;
 import uim.systems;
 
 class DCTLAccountForm : DForm {
-  mixin(ViewComponentThis!("CTLAccountForm", true));
+  mixin(ViewComponentThis!("CTLAccountForm"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -13,5 +13,5 @@ class DCTLAccountForm : DForm {
       .content(SystemAccountFormContent);
   }
 }
-mixin(ViewComponentCalls!("CTLAccountForm", true));
+mixin(ViewComponentCalls!("CTLAccountForm"));
 
