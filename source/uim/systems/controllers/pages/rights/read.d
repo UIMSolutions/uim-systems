@@ -15,7 +15,7 @@ class DSystemRightReadPageController : DSystemReadPageController {
 
     auto myView = APPEntityReadView(this)
       .rootPath(this.rootPath);
-
+/* 
     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
@@ -28,7 +28,7 @@ class DSystemRightReadPageController : DSystemReadPageController {
       myHeader
         .breadcrumbs(bc)
         .title(titleCreate("Recht anzeigen"));
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm

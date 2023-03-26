@@ -16,7 +16,7 @@ class DSystemRightCreatePageController : DSystemCreatePageController {
     auto myView = APPEntityCreateView(this)
       .rootPath(this.rootPath);
     
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,14 +29,14 @@ class DSystemRightCreatePageController : DSystemCreatePageController {
         .rootPath(this.rootPath)
         .title(titleCreate("Recht erstellen"))
         .breadcrumbs(bc);
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm
         .rootPath(this.rootPath)
         .method("post")
-        .action(this.rootPath~"/actions/create")
-        .content(SystemRightFormContent(myForm));
+        .action(this.rootPath~"/actions/create");
+/*         .content(SystemRightFormContent(myForm)); */
     
       if (auto myFormHeader = cast(DFormHeader)myForm.header) {
           myFormHeader

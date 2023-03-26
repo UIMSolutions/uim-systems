@@ -16,7 +16,7 @@ class DSystemRightIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/rights")
       .collectionName("system_rights");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,7 +29,7 @@ class DSystemRightIndexPageController : DSystemEntitiesPageController {
         .breadcrumbs(bc)
         .title(titleView("Übersicht Rechte"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto myForm = cast(DForm)myView.form) {
       myForm

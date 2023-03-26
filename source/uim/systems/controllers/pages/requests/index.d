@@ -16,7 +16,7 @@ class DSystemRequestIndexPageController : DSystemEntitiesPageController {
       .rootPath("/system/requests")
       .collectionName("system_requests");
 
-    if (auto myHeader = cast(DPageHeader)myView.header) {
+/*     if (auto myHeader = cast(DPageHeader)myView.header) {
       auto bc = BS5Breadcrumb(
         BS5BreadcrumbList
         .link(["href":"/"], "UIM")
@@ -29,7 +29,7 @@ class DSystemRequestIndexPageController : DSystemEntitiesPageController {
         .breadcrumbs(bc)
         .title(titleView("Übersicht Requests"))
         .actions([["refresh", "list", "create"]]);
-    }
+    } */
 
     if (auto frm = cast(DForm)myView.form) {
       frm
