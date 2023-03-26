@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.groups.otp;
 import uim.systems;
 
 class DCTLOtpFormInput : DSwitchFormInput {
-  mixin(ViewComponentThis!("CTLOtpFormInput", true));
+  mixin(ViewComponentThis!("CTLOtpFormInput"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -17,4 +17,4 @@ class DCTLOtpFormInput : DSwitchFormInput {
     .fieldValue("false");
   }
 }
-mixin(ViewComponentCalls!("CTLOtpFormInput", true));
+mixin(ViewComponentCalls!("CTLOtpFormInput"));

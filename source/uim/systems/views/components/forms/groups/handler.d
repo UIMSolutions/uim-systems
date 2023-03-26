@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.groups.handler;
 import uim.systems;
 
 class DSYSFormInputHandler : DFormInputHandler {
-  mixin(ViewComponentThis!("SYSFormInputHandler", true));
+  mixin(ViewComponentThis!("SYSFormInputHandler"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -48,4 +48,4 @@ class DSYSFormInputHandler : DFormInputHandler {
     return null;
   } */
 }  
-mixin(ViewComponentCalls!("SYSFormInputHandler", true));
+mixin(ViewComponentCalls!("SYSFormInputHandler"));

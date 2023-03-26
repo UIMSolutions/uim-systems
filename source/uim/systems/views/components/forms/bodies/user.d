@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.user;
 import uim.systems;
 
 class DSystemUserFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemUserFormContent", true));
+  mixin(ViewComponentThis!("SystemUserFormContent"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -28,7 +28,7 @@ class DSystemUserFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemUserFormContent", true));
+mixin(ViewComponentCalls!("SystemUserFormContent"));
 
 unittest {
   assert(SystemUserFormContent);

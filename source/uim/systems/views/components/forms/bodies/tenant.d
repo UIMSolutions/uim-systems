@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.tenant;
 import uim.systems;
 
 class DSystemTenantFormContent : DEntityFormContent {
-  mixin(ViewComponentThis!("SystemTenantFormContent", true));
+  mixin(ViewComponentThis!("SystemTenantFormContent"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -32,7 +32,7 @@ class DSystemTenantFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(ViewComponentCalls!("SystemTenantFormContent", true));
+mixin(ViewComponentCalls!("SystemTenantFormContent"));
 
 unittest {
   assert(SystemTenantFormContent);

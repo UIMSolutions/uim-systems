@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.groups.password;
 import uim.systems;
 
 class DCTLPasswordFormInput : DFormInput {
-  mixin(ViewComponentThis!("CTLPasswordFormInput", true));
+  mixin(ViewComponentThis!("CTLPasswordFormInput"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -47,4 +47,4 @@ class DCTLPasswordFormInput : DFormInput {
       // 
       }}
 }
-mixin(ViewComponentCalls!("CTLPasswordFormInput", true));
+mixin(ViewComponentCalls!("CTLPasswordFormInput"));

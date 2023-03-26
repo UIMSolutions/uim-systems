@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.groups.active;
 import uim.systems;
 
 class DCTLActiveFormInput : DSwitchFormInput {
-  mixin(ViewComponentThis!("CTLActiveFormInput", true));
+  mixin(ViewComponentThis!("CTLActiveFormInput"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -17,4 +17,4 @@ class DCTLActiveFormInput : DSwitchFormInput {
     .fieldValue("false");
   }
 }
-mixin(ViewComponentCalls!("CTLActiveFormInput", true));
+mixin(ViewComponentCalls!("CTLActiveFormInput"));
