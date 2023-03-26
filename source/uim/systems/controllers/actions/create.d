@@ -12,7 +12,7 @@ class DSystemCreateAction : DActionController {
     this
     .checks([
       AppSessionHasSessionCheck, AppSessionHasSiteCheck, // AppSession related checks
-      CheckDatabaseHasSystems]); // Database related checks
+      DatabaseHasSystemsCheck]); // Database related checks
   }
 
   override void beforeResponse(STRINGAA options = null) {
