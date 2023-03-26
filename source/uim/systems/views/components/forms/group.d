@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLGroupForm : DForm {
   mixin(ViewComponentThis!("CTLGroupForm", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     this
     .content(SystemGroupFormContent);
   }

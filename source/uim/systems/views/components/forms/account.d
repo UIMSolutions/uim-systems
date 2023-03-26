@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLAccountForm : DForm {
   mixin(ViewComponentThis!("CTLAccountForm", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

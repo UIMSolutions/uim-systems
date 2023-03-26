@@ -6,7 +6,7 @@ import uim.systems;
 class DCTLRoleForm : DForm {
   mixin(ViewComponentThis!("CTLRoleForm", true));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
