@@ -31,7 +31,7 @@ class DSystemRequestFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(FormComponentCalls!("SystemRequestFormContent", true));
+mixin(ViewComponentCalls!("SystemRequestFormContent", true));
 
 unittest {
   assert(SystemRequestFormContent);

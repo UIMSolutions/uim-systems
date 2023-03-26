@@ -32,7 +32,7 @@ class DSystemRoleFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(FormComponentCalls!("SystemRoleFormContent", true));
+mixin(ViewComponentCalls!("SystemRoleFormContent", true));
 
 unittest {
   assert(SystemRoleFormContent);

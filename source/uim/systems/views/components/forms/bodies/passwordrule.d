@@ -35,7 +35,7 @@ class DSystemPasswordRuleFormContent : DEntityFormContent {
     return null; 
   } */
 }
-mixin(FormComponentCalls!("SystemPasswordRuleFormContent", true));
+mixin(ViewComponentCalls!("SystemPasswordRuleFormContent", true));
 
 unittest {
   assert(SystemPasswordRuleFormContent);

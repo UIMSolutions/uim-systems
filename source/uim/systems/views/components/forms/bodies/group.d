@@ -32,7 +32,7 @@ class DSystemGroupFormContent : DEntityFormContent {
     return null;
   } */
 }
-mixin(FormComponentCalls!("SystemGroupFormContent", true));
+mixin(ViewComponentCalls!("SystemGroupFormContent", true));
 
 unittest {
   assert(SystemGroupFormContent);

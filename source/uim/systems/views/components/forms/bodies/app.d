@@ -15,7 +15,7 @@ class DSystemAppFormContent : DEntityFormContent {
     .inputHandler(SYSFormInputHandler);   
   }
 } 
-mixin(FormComponentCalls!("SystemAppFormContent", true));
+mixin(ViewComponentCalls!("SystemAppFormContent", true));
 
 unittest {
   assert(SystemAppFormContent);

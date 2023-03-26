@@ -26,7 +26,7 @@ class DSystemOrganizationFormContent : DEntityFormContent {
     }
   } */
 }
-mixin(FormComponentCalls!("SystemOrganizationFormContent", true));
+mixin(ViewComponentCalls!("SystemOrganizationFormContent", true));
 
 unittest {
   assert(SystemOrganizationFormContent);
