@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.right;
 import uim.systems;
 
 class DSystemRightFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemRightFormHeader", true));
+  mixin(ViewComponentThis!("SystemRightFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemRightFormHeader", true));
 

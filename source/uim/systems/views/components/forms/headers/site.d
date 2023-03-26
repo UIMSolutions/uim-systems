@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.site;
 import uim.systems;
 
 class DSystemSiteFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemSiteFormHeader", true));
+  mixin(ViewComponentThis!("SystemSiteFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemSiteFormHeader", true));
 

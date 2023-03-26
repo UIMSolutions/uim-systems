@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.session;
 import uim.systems;
 
 class DSystemSessionFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemSessionFormHeader", true));
+  mixin(ViewComponentThis!("SystemSessionFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemSessionFormHeader", true));
 

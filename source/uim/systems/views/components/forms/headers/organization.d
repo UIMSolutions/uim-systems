@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.organization;
 import uim.systems;
 
 class DSystemOrganizationFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemOrganizationFormHeader", true));
+  mixin(ViewComponentThis!("SystemOrganizationFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemOrganizationFormHeader", true));
 

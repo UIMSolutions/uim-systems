@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.user;
 import uim.systems;
 
 class DSystemUserFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemUserFormHeader", true));
+  mixin(ViewComponentThis!("SystemUserFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemUserFormHeader", true));
 

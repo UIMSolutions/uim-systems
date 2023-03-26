@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.headers.group;
 import uim.systems;
 
 class DSystemGroupFormHeader : DFormHeader {
-  mixin(FormComponentThis!("SystemGroupFormHeader", true));
+  mixin(ViewComponentThis!("SystemGroupFormHeader", true));
 }
 mixin(FormComponentCalls!("SystemGroupFormHeader", true));
 
