@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemAppUpdatePageController : DSystemUpdatePageController {
   mixin(APPPageControllerThis!("SystemAppUpdatePageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
