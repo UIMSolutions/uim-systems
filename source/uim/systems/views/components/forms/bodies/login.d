@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.login;
 import uim.systems;
 
 class DSystemLoginFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemLoginFormContent", true));
+  mixin(ViewComponentThis!("SystemLoginFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

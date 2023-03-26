@@ -10,7 +10,7 @@ class DSystemIndexPageController : DSystemEntityPageController {
     super.initialize(configSettings);
 
     this
-    .checks([APPCheckAppSessionHasSession]);
+      .checks([APPCheckAppSessionHasSession]);
   }
 
   override void beforeResponse(STRINGAA options = null) {

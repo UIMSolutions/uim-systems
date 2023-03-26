@@ -15,6 +15,7 @@ public import uim.servers;
 public import uim.jsonbase;
 public import uim.entitybase;
 public import uim.models;
+public import uim.mvc;
 
 // Packages
 public import uim.systems.controllers;

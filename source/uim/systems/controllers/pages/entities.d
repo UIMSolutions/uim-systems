@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemEntitiesPageController : DAPPEntitiesPageController {
   mixin(PageControllerThis!("SystemEntitiesPageController"));
 
-  mixin(OProperty!("string", "rootPath"));
+  /* mixin(OProperty!("string", "rootPath")); */
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

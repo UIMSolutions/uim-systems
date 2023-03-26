@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.passwordrule;
 import uim.systems;
 
 class DSystemPasswordRuleFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemPasswordRuleFormContent", true));
+  mixin(ViewComponentThis!("SystemPasswordRuleFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

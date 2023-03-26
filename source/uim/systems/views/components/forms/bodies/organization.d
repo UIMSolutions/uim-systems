@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.organization;
 import uim.systems;
 
 class DSystemOrganizationFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemOrganizationFormContent", true));
+  mixin(ViewComponentThis!("SystemOrganizationFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

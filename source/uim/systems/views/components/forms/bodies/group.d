@@ -4,7 +4,7 @@ module uim.systems.views.components.forms.bodies.group;
 import uim.systems;
 
 class DSystemGroupFormContent : DEntityFormContent {
-  mixin(FormComponentThis!("SystemGroupFormContent", true));
+  mixin(ViewComponentThis!("SystemGroupFormContent", true));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
