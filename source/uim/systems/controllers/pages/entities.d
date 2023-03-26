@@ -56,7 +56,7 @@ class DSystemEntitiesPageController : DAPPEntitiesPageController {
       return; }
   }
 }
-mixin(APPPageControllerCalls!("SystemEntitiesPageController"));
+mixin(PageControllerCalls!("SystemEntitiesPageController"));
 
 version(test_uim_modeller) {
   unittest {

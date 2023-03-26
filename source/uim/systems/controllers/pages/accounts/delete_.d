@@ -55,7 +55,7 @@ class DSystemAccountDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemAccountDeletePageController"));
+mixin(PageControllerCalls!("SystemAccountDeletePageController"));
 
 version(test_uim_systems) {
   unittest {

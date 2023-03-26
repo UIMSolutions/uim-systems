@@ -27,7 +27,7 @@ class DSystemUpdatePageController : DSystemEntityPageController {
       }
     }
 }
-mixin(APPPageControllerCalls!("SystemUpdatePageController"));
+mixin(PageControllerCalls!("SystemUpdatePageController"));
 
 version(test_uim_modeller) {
   unittest {

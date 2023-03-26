@@ -35,7 +35,7 @@ class DSystemEntityPageController : DAPPEntityPageController {
       .collection(this.tenant[this.collectionName]);
   }
 }
-mixin(APPPageControllerCalls!("SystemEntityPageController"));
+mixin(PageControllerCalls!("SystemEntityPageController"));
 
 version(test_uim_modeller) {
   unittest {

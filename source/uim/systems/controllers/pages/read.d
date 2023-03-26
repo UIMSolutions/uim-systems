@@ -29,7 +29,7 @@ class DSystemReadPageController : DSystemEntityPageController {
     }
   }
 }
-mixin(APPPageControllerCalls!("SystemReadPageController"));
+mixin(PageControllerCalls!("SystemReadPageController"));
 
 version(test_uim_modeller) {
   unittest {

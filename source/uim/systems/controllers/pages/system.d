@@ -22,7 +22,7 @@ class DSystemModellerPageController : DSystemEntityPageController {
     super.afterResponse(options);
   }
 }
-mixin(APPPageControllerCalls!("SystemModellerPageController"));
+mixin(PageControllerCalls!("SystemModellerPageController"));
 
 version(test_uim_modeller) {
   unittest {

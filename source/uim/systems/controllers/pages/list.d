@@ -69,7 +69,7 @@ class DSystemListPageController : DAPPListPage {
       /// TODO
     }}
 }
-mixin(APPPageControllerCalls!("SystemListPageController"));
+mixin(PageControllerCalls!("SystemListPageController"));
 
 version(test_uim_modeller) {
   unittest {

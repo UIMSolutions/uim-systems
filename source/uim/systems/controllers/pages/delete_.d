@@ -23,7 +23,7 @@ class DSystemDeletePageController : DSystemEntityPageController {
     }
   }
 }
-mixin(APPPageControllerCalls!("SystemDeletePageController"));
+mixin(PageControllerCalls!("SystemDeletePageController"));
 
 version(test_uim_modeller) {
   unittest {
