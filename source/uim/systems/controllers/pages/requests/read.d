@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemRequestReadPageController : DSystemReadPageController {
   mixin(APPPageControllerThis!("SystemRequestReadPageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
