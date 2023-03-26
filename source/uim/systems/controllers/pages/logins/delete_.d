@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemLoginDeletePageController : DSystemDeletePageController {
   mixin(APPPageControllerThis!("SystemLoginDeletePageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

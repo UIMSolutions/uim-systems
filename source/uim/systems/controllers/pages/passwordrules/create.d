@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemPasswordRuleCreatePageController : DSystemCreatePageController {
   mixin(APPPageControllerThis!("SystemPasswordRuleCreatePageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this

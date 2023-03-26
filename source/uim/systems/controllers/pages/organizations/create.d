@@ -6,7 +6,7 @@ import uim.systems;
 class DSystemOrganizationCreatePageController : DSystemCreatePageController {
   mixin(APPPageControllerThis!("SystemOrganizationCreatePageController"));
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     super.initialize;
 
     this
