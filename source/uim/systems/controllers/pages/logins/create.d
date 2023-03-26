@@ -63,7 +63,7 @@ class DSystemLoginCreatePageController : DSystemCreatePageController {
       .view(myView);      
   }
 }
-mixin(APPPageControllerCalls!("SystemLoginCreatePageController"));
+mixin(PageControllerCalls!("SystemLoginCreatePageController"));
 
 version(test_uim_systems) {
   unittest {

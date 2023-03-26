@@ -44,7 +44,7 @@ class DSystemLoginIndexPageController : DSystemEntitiesPageController {
     } 
   }
 }
-mixin(APPPageControllerCalls!("SystemLoginIndexPageController"));
+mixin(PageControllerCalls!("SystemLoginIndexPageController"));
 
 version(test_uim_systems) {
   unittest {

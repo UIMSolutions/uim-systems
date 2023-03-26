@@ -58,7 +58,7 @@ class DSystemGroupUpdatePageController : DSystemUpdatePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemGroupUpdatePageController"));
+mixin(PageControllerCalls!("SystemGroupUpdatePageController"));
 
 version(test_uim_systems) {
   unittest {

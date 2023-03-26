@@ -56,7 +56,7 @@ class DSystemLoginDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemLoginDeletePageController"));
+mixin(PageControllerCalls!("SystemLoginDeletePageController"));
 
 version(test_uim_systems) {
   unittest {

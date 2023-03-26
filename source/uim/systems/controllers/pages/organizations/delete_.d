@@ -56,7 +56,7 @@ class DSystemOrganizationDeletePageController : DSystemDeletePageController {
       .view(myView);
   }
 }
-mixin(APPPageControllerCalls!("SystemOrganizationDeletePageController"));
+mixin(PageControllerCalls!("SystemOrganizationDeletePageController"));
 
 version(test_uim_systems) {
   unittest {
