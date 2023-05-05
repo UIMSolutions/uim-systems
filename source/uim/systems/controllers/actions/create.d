@@ -21,11 +21,10 @@ class DSystemCreateAction : DActionController {
     if (hasError || "redirect" in options) { return; }    
 
     if (this.collection) {
-      if (auto entity = collection.createFromTemplate) {             
+      if (auto entity = collection.createFromTemplate) { 
+        entity.fromRequest(options);            
         collection
-          .insertOne(
-              entity
-                .fromRequest(options));
+          .insertOne(entity);
 
         options["redirect"] = this.rootPath ~ "/view?id="~entity.id.toString; 
       }
