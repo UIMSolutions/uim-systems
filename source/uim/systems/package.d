@@ -9,7 +9,7 @@ public import vibe.d;
 public import uim.core;
 public import uim.oop;
 public import uim.bootstrap;
-public import uim.javascript;
+public import langs.javascript;
 public import uim.apps;
 public import uim.servers;
 public import uim.jsonbase;
