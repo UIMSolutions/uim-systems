@@ -1,1 +1,1 @@
-# Package 📦 uim.systems.controllers.oages
+# Package 📦 uim.systems.controllers.pages
